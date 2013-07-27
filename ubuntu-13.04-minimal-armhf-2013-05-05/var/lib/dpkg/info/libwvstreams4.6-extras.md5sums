@@ -1,0 +1,5 @@
+51c150fc8cb99c0dd4c4bf4878620895  usr/lib/libwvdbus.so.4.6
+d8f7ae7780942d9940e7fa89e9ed0e7b  usr/lib/libwvstreams.so.4.6
+9a8465421147538492d864ed2285a5cb  usr/lib/libwvutils.so.4.6
+0368188f00ae09eb1e1e4a709ae3a109  usr/share/doc/libwvstreams4.6-extras/copyright
+95b909920ebc5584f389b4d4792f103f  usr/share/lintian/overrides/libwvstreams4.6-extras

@@ -1,0 +1,1148 @@
+Package: casper
+Priority: extra
+Section: misc
+Installed-Size: 253
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Version: 1.331
+Depends: libc6 (>= 2.8), libplymouth2 (>= 0.8.0~-13~ppa1), initramfs-tools (>= 0.92bubuntu55), busybox-initramfs (>= 1:1.1.3-4ubuntu3), dmsetup, user-setup, sudo, eject, uuid-runtime, localechooser-data (>= 2.03ubuntu1), util-linux (>= 2.15-1), file, lzma, udev (>= 174), cifs-utils
+Conflicts: live-initramfs, usplash (<< 0.4-43)
+Breaks: genext2fs (<< 1.4.1)
+Filename: pool/main/c/casper/casper_1.331_armhf.deb
+Size: 48348
+MD5sum: 6a5e068a0bd4e96e814d57926cccec52
+SHA1: 9feb0af8883318357c3e15b1a15fff9d3f8285f6
+SHA256: c33215d5ae7cd4c43b1d4c3b5ed954efa3b1a0bc30f8d8e386807bbf194a8916
+Description: Run a "live" preinstalled system from read-only media
+Tag: admin::boot, admin::filesystem, implemented-in::shell, protocol::smb, role::plugin, scope::utility, special::completely-tagged, works-with-format::iso9660
+Description-md5: 9be0120948307c7e897a16c45a69ba0f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: xubuntu-live, ubuntustudio-dvd-live
+
+Package: clamav
+Priority: optional
+Section: utils
+Installed-Size: 532
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: armhf
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Depends: libc6 (>= 2.15), libclamav6 (>= 0.97.8+dfsg), zlib1g (>= 1:1.1.4), clamav-freshclam | clamav-data
+Recommends: clamav-base
+Suggests: clamav-docs
+Filename: pool/main/c/clamav/clamav_0.97.8+dfsg-1ubuntu1.13.04.1_armhf.deb
+Size: 120920
+MD5sum: 3e20e5c479c0eee51834c0fa02d91a00
+SHA1: 8ad9a1a2bdb239b26224ce9efec752d14cc9d9f7
+SHA256: cb0dd39ea557b6a6f99b4b7b85ceb14f3daa70913515e7c0941fe9b891530273
+Description: anti-virus utility for Unix - command-line interface
+Homepage: http://www.clamav.net/
+Description-md5: 25816a2f56a0c214a484e117fd9fe0b1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: clamav-base
+Priority: optional
+Section: utils
+Installed-Size: 499
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: all
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Depends: debconf (>= 0.5) | debconf-2.0, adduser, ucf, logrotate
+Recommends: clamav
+Filename: pool/main/c/clamav/clamav-base_0.97.8+dfsg-1ubuntu1.13.04.1_all.deb
+Size: 100704
+MD5sum: 1530fb75e7fa7fc6508e31084bc284d4
+SHA1: 74dc7b2ee6c53602b436683e02c766576c16a602
+SHA256: f0337fa524abbd377e65c6d58d1c3d4cc63c70458f95b11190c4dffa0d334fdd
+Description: anti-virus utility for Unix - base package
+Homepage: http://www.clamav.net/
+Description-md5: 36333c8001fa330971bb9bf732bd846d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: clamav-daemon
+Priority: optional
+Section: utils
+Installed-Size: 726
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Depends: libc6 (>= 2.15), libclamav6 (>= 0.97.8+dfsg), libncurses5 (>= 5.5-5~), libtinfo5, zlib1g (>= 1:1.2.0.2), clamav-base (= 0.97.8+dfsg-1ubuntu1.13.04.1), clamav-freshclam | clamav-data, lsb-base (>= 3.2-13), ucf
+Suggests: daemon, clamav-docs, apparmor (>= 2.3+1289)
+Filename: pool/main/c/clamav/clamav-daemon_0.97.8+dfsg-1ubuntu1.13.04.1_armhf.deb
+Size: 203904
+MD5sum: 4517928ff1cc994517799902ff0da7f2
+SHA1: a92bcd6992ece86facaf0566b597fddfe32148a6
+SHA256: 2859dddd7085ce167523ebdace1fbffd9e48392ad5e96df0841124de4fd92cda
+Description: anti-virus utility for Unix - scanner daemon
+Homepage: http://www.clamav.net/
+Description-md5: 67066a5cf6ee89fc8ce3ae691827a9ad
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: clamav-dbg
+Priority: extra
+Section: debug
+Installed-Size: 4878
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Depends: libclamav6, clamav (= 0.97.8+dfsg-1ubuntu1.13.04.1)
+Filename: pool/main/c/clamav/clamav-dbg_0.97.8+dfsg-1ubuntu1.13.04.1_armhf.deb
+Size: 1932920
+MD5sum: 22edacb3f94a5926e28f57ac5dc6582c
+SHA1: d590be7cd4c6d7b015c57ebbe1d52e695dc6b26a
+SHA256: fa9448860eae1e66fb7b6f658f3eea9118254901b7af94f28f37a2b31f764171
+Description: debug symbols for ClamAV
+Homepage: http://www.clamav.net/
+Description-md5: 33a33cc71dce345b4a0ce175ebeca8c7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: clamav-docs
+Priority: optional
+Section: doc
+Installed-Size: 1563
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: all
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Filename: pool/main/c/clamav/clamav-docs_0.97.8+dfsg-1ubuntu1.13.04.1_all.deb
+Size: 1081852
+MD5sum: 0993d0e86a76947a2ac34ab1c81d913f
+SHA1: 4304fd0999ebf9168b43cb5233e4deb8cfff4faa
+SHA256: b679a35ea267ec284adf5ac532859eeeccfe669666c75173bd667508cf2361c0
+Description: anti-virus utility for Unix - documentation
+Homepage: http://www.clamav.net/
+Description-md5: e2412f6e57d4fb282e22d549e939cb72
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: clamav-freshclam
+Priority: optional
+Section: utils
+Installed-Size: 588
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Provides: clamav-data
+Depends: debconf (>= 0.5) | debconf-2.0, clamav-base (>= 0.97.8+dfsg-1ubuntu1.13.04.1), libc6 (>= 2.15), libclamav6 (>= 0.97.8+dfsg), zlib1g (>= 1:1.1.4), ucf, logrotate, lsb-base (>= 3.2-13)
+Suggests: clamav-docs, apparmor (>= 2.3+1289)
+Conflicts: clamav-data, libclamav2, libclamav3
+Filename: pool/main/c/clamav/clamav-freshclam_0.97.8+dfsg-1ubuntu1.13.04.1_armhf.deb
+Size: 108172
+MD5sum: 6a632bac1bf8dc53cb38f71d5d3ba878
+SHA1: bd17089fed8dea762801922c8717cc02091f524e
+SHA256: 15346cc28d058c2b4a6056da0fc04cbeed999f4472fdf688a8925b2549534f61
+Description: anti-virus utility for Unix - virus database update utility
+Homepage: http://www.clamav.net/
+Description-md5: 824a85afc618e1467a907719e4edd7bb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: debootstrap
+Priority: extra
+Section: admin
+Installed-Size: 226
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Version: 1.0.46ubuntu1
+Depends: wget
+Recommends: gnupg, ubuntu-keyring
+Filename: pool/main/d/debootstrap/debootstrap_1.0.46ubuntu1_all.deb
+Size: 35178
+MD5sum: 621945171c080c58280b3a845f7c5923
+SHA1: 12563c279f233ea458739202d3e5acade6540749
+SHA256: 6d88d15325671a4178052494094fc5ab56b10c518813fc327454f1b74c9465ff
+Description: Bootstrap a basic Debian system
+Description-md5: 883a8efb3ed16248b0d2091d9c0b60c9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: edubuntu-desktop-gnome
+
+Package: distro-info-data
+Priority: optional
+Section: devel
+Installed-Size: 34
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Benjamin Drung <bdrung@debian.org>
+Architecture: all
+Version: 0.13ubuntu0.1
+Replaces: distro-info (<< 0.3~)
+Breaks: distro-info (<< 0.3~)
+Filename: pool/main/d/distro-info-data/distro-info-data_0.13ubuntu0.1_all.deb
+Size: 4244
+MD5sum: ee24503bffdfee6c50e2e663e43d304d
+SHA1: 944f8d51487d25cfc99e0e6adff4f18757a081d5
+SHA256: 4f52d7a9712fca936b590146ee468393285913efc5dce70c02516d4488d8b184
+Description: information about the distributions' releases (data files)
+Description-md5: f7fe06a2e0396bbe8c1c7abad056bf48
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: cloud-image, edubuntu-desktop-gnome
+
+Package: gir1.2-lightdm-1
+Priority: optional
+Section: libs
+Installed-Size: 63
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Depends: liblightdm-gobject-1-0 (= 1.6.0-0ubuntu2.1)
+Filename: pool/main/l/lightdm/gir1.2-lightdm-1_1.6.0-0ubuntu2.1_armhf.deb
+Size: 5420
+MD5sum: 3953bfa865de26be14a9ff97d1c70a73
+SHA1: a1edb250ecfb4f0ee398d38796470f3284e11768
+SHA256: 4b1fd4ca97b9230c07303bc4d0861edc968597634a97ce36b5431a660c08d4ed
+Description: Typelib file for liblightdm-1
+Homepage: https://launchpad.net/lightdm
+Description-md5: 15edc3a87b41d0dccba5699c5b28aa73
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libclamav-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 294
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Depends: libclamav6 (= 0.97.8+dfsg-1ubuntu1.13.04.1), libssl-dev, libidn11-dev, libc6-dev | libc-dev, zlib1g-dev, libbz2-dev, libtommath-dev
+Filename: pool/main/c/clamav/libclamav-dev_0.97.8+dfsg-1ubuntu1.13.04.1_armhf.deb
+Size: 13310
+MD5sum: bb0c369311f3dc013e572624dc4ef0d9
+SHA1: 76a452dbaa3003cb82cb4a274634523462561b75
+SHA256: b8b5ab2498ecc134e513256df9ceceee856342a47395260d9cecf452108008d1
+Description: anti-virus utility for Unix - development files
+Homepage: http://www.clamav.net/
+Description-md5: f9403f3147d4d160269156db01264656
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libclamav6
+Priority: optional
+Section: libs
+Installed-Size: 1056
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Depends: libbz2-1.0, libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libltdl7 (>= 2.4.2), libtommath0, zlib1g (>= 1:1.1.4)
+Suggests: libclamunrar6
+Filename: pool/main/c/clamav/libclamav6_0.97.8+dfsg-1ubuntu1.13.04.1_armhf.deb
+Size: 488782
+MD5sum: 2298e2b4667bbf6b3b0d24ff2dea6707
+SHA1: 88be5dffdd8ce8a2eaaf6b2061b5bc7d445070d5
+SHA256: 87c7299288a270857617f090c5c330f97ed41973713d06b4ad37c2556f7b675a
+Description: anti-virus utility for Unix - library
+Homepage: http://www.clamav.net/
+Description-md5: 8eec48379ead2492f2f06feeb97a6a2f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: liblightdm-gobject-1-0
+Priority: optional
+Section: x11
+Installed-Size: 97
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.28.0), libx11-6, libxklavier16 (>= 5.0)
+Recommends: lightdm, accountsservice
+Filename: pool/main/l/lightdm/liblightdm-gobject-1-0_1.6.0-0ubuntu2.1_armhf.deb
+Size: 27970
+MD5sum: 42e0224b70a253f61df5ff57550d7fcc
+SHA1: ea8bd10ce63eb61fc560211c238f00819e3a5e15
+SHA256: 6347c20b2aeec5d6191d1bd76b75585c85cfde732bf5935ba2f0f99ab376efe7
+Description: LightDM GObject client library
+Homepage: https://launchpad.net/lightdm
+Description-md5: 6c3bad2fb3c13c192ee2080b06f2b9b2
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, lubuntu-core, ubuntustudio-desktop
+
+Package: liblightdm-gobject-1-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 169
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Depends: liblightdm-gobject-1-0 (= 1.6.0-0ubuntu2.1), libglib2.0-dev, libdbus-glib-1-dev, libxklavier-dev
+Filename: pool/main/l/lightdm/liblightdm-gobject-1-dev_1.6.0-0ubuntu2.1_armhf.deb
+Size: 11464
+MD5sum: 00c1e2225c40e268dfc3bb744e8a52ed
+SHA1: 372caa177a21a8d592931e0d9c219c089114e5c3
+SHA256: d7997071055e7332d08b4721045f82b4e67e8b79dc2b992518f40353c2248e2c
+Description: LightDM GObject client library (development files)
+Homepage: https://launchpad.net/lightdm
+Description-md5: 7b47429d527a03b25da17dce04d74b8e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: liblightdm-gobject-1-doc
+Priority: optional
+Section: doc
+Installed-Size: 203
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: all
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Filename: pool/main/l/lightdm/liblightdm-gobject-1-doc_1.6.0-0ubuntu2.1_all.deb
+Size: 20526
+MD5sum: 015d5c149a7a4e99c943132f15b9373f
+SHA1: 9fa06d5e5a0640492e4e3c21e948c0cda10581e0
+SHA256: 0b99fc8cd1e6bee70ef19d454ff025db49ec3e884af69d37a26779a10b1a75ea
+Description: LightDM client library (documentation)
+Homepage: https://launchpad.net/lightdm
+Description-md5: ed7ca117d51a427f54238d598a2c843e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: liblightdm-qt-2-0
+Priority: optional
+Section: x11
+Installed-Size: 106
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Replaces: liblightdm-qt-1-0 (>= 1.1.1)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), liblightdm-gobject-1-0 (>= 1.4.0), libqt4-dbus (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.3.0)
+Recommends: lightdm
+Conflicts: liblightdm-qt-1-0 (>= 1.1.1)
+Filename: pool/main/l/lightdm/liblightdm-qt-2-0_1.6.0-0ubuntu2.1_armhf.deb
+Size: 26070
+MD5sum: f904e6a57f47c82a20c98e75e57416b6
+SHA1: 7f0232b74ce90918739d2e6d1efbaadabc21fff7
+SHA256: 39f86fc262e9ce5203b3ebff01e9968c545364d6f924ef514c30dcdf0ab0a02d
+Description: LightDM Qt client library
+Homepage: https://launchpad.net/lightdm
+Description-md5: e4829922d725966a3547148f5055fe94
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active
+
+Package: liblightdm-qt-2-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 71
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Replaces: liblightdm-qt-1-dev (>= 1.1.1)
+Depends: liblightdm-qt-2-0 (= 1.6.0-0ubuntu2.1), libqt4-dev
+Conflicts: liblightdm-qt-1-dev (>= 1.1.1)
+Filename: pool/main/l/lightdm/liblightdm-qt-2-dev_1.6.0-0ubuntu2.1_armhf.deb
+Size: 4368
+MD5sum: 27bd1ef6df5e74db8ee2491af57e56f4
+SHA1: b09d787009143f0478437ea16c05d738657e8f52
+SHA256: 11e9cdc42f7d2c1405f5000e59140f6bdaa1027d143a2b3e2046d4f8253d58f6
+Description: LightDM Qt client library (development files)
+Homepage: https://launchpad.net/lightdm
+Description-md5: ff0d940b50715c82bbf4f79a43e4beb8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: liblightdm-qt5-2-0
+Priority: optional
+Section: x11
+Installed-Size: 110
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), liblightdm-gobject-1-0 (>= 1.4.0), libqt5core5 (>= 5.0.1+dfsg), libqt5dbus5 (>= 5.0.1+dfsg), libqt5gui5 (>= 5.0.1+dfsg), libstdc++6 (>= 4.3.0)
+Recommends: lightdm
+Filename: pool/main/l/lightdm/liblightdm-qt5-2-0_1.6.0-0ubuntu2.1_armhf.deb
+Size: 27484
+MD5sum: 52414aa02340178e231bdeb5b8ed334d
+SHA1: 322b6a2ac7f7d8b596e1ec453e2098ba28fa8b30
+SHA256: 8729a23b8baa376816b194e18104a86a2ff598634c11267f70663aaaf8867260
+Description: LightDM Qt 5 client library
+Homepage: https://launchpad.net/lightdm
+Description-md5: 14bad12e84d0c8c995dabc65095c9b02
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: liblightdm-qt5-2-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 71
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Source: lightdm
+Version: 1.6.0-0ubuntu2.1
+Depends: liblightdm-qt5-2-0 (= 1.6.0-0ubuntu2.1), libqt4-dev
+Filename: pool/main/l/lightdm/liblightdm-qt5-2-dev_1.6.0-0ubuntu2.1_armhf.deb
+Size: 4342
+MD5sum: 47c146d3297b9b7d4cfb4cd96aab6810
+SHA1: f33f13573dd49fe8ff938ff88b53e1323b348518
+SHA256: bd4c22abac86fcee24b227a429f1b1e870cf40e5d9af34e7d196054d04b5caf4
+Description: LightDM Qt 5 client library (development files)
+Homepage: https://launchpad.net/lightdm
+Description-md5: befe4f3f090b62ea12a3d96e66eeecbd
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libmysqlclient-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 4615
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Replaces: libmysqlclient15-dev
+Provides: libmysqlclient15-dev
+Depends: libmysqlclient18 (= 5.5.31-0ubuntu0.13.04.1), zlib1g-dev
+Conflicts: libmysqlclient10-dev, libmysqlclient12-dev, libmysqlclient14-dev, libmysqlclient15-dev
+Filename: pool/main/m/mysql-5.5/libmysqlclient-dev_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 1285046
+MD5sum: b33806dea8f1d8ba95e28cf2621a98b3
+SHA1: 7fe68138afec0fdecd89adb719d4a4d9766c3d5b
+SHA256: 573ff0ff8e9ca6db12bfb84b85cef6e98d5a40401cedb821b20b28c87f930c9f
+Description: MySQL database development files
+Homepage: http://dev.mysql.com/
+Description-md5: 716f7a81dc4e3e8899c7eaa66b24736d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libmysqlclient18
+Priority: optional
+Section: libs
+Installed-Size: 3017
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Depends: mysql-common (>= 5.5.31-0ubuntu0.13.04.1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/m/mysql-5.5/libmysqlclient18_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 861598
+MD5sum: 5fc0f1842fcf6b74c1d4081946342ac2
+SHA1: dbef884711a17d189fbd7c8b73a78950d18324ee
+SHA256: 3a5ca1e28fddf52efdce32c9ec28aca2a977f890bd59eec64492d077657d0083
+Description: MySQL database client library
+Multi-Arch: same
+Homepage: http://dev.mysql.com/
+Description-md5: 49de807663510f5f2afd3e71efe199f1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: lamp-server, kubuntu-desktop, kubuntu-active, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop-gnome, mythbuntu-frontend, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master, ubuntustudio-desktop
+
+Package: libmysqld-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 13170
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Depends: libmysqlclient-dev (>= 5.5.31-0ubuntu0.13.04.1)
+Filename: pool/main/m/mysql-5.5/libmysqld-dev_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 4463554
+MD5sum: 42611c9b5a341a729b4013e112db2020
+SHA1: e02e14396006e87c2b6974b789982fad138dea9d
+SHA256: 1ed4f601616fd10ef0a87aeb4b7da0f5bd5c3f79f9bf00bf372dfbcd18f539ba
+Description: MySQL embedded database development files
+Homepage: http://dev.mysql.com/
+Description-md5: 2f06b7e1bfdb9f620d92f9696d24fabc
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libplymouth-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 433
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.7.0+git20090207-0ubuntu0.1~ppa4)
+Depends: libplymouth2 (= 0.8.8-0ubuntu6.1)
+Filename: pool/main/p/plymouth/libplymouth-dev_0.8.8-0ubuntu6.1_armhf.deb
+Size: 95282
+MD5sum: bebdee79ce68d57dd19fdcaa5a98eadf
+SHA1: bf6fe656c8d2f5685b818d73816fb6d304f0cc73
+SHA256: 3d5a34062fc874190032fb67a37b6fe50f9f5e05469f4593631fd411c231510c
+Description: graphical boot animation and logger - development files
+Multi-Arch: same
+Description-md5: 2788897f3e5c5b2f91c898358099697e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libplymouth2
+Priority: required
+Section: libs
+Installed-Size: 229
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.7.0+git20090207-0ubuntu0.1~ppa4)
+Depends: libc6 (>= 2.8), libpng12-0 (>= 1.2.13-4)
+Pre-Depends: multiarch-support
+Breaks: casper (= 1.227), mountall (<< 2.8)
+Filename: pool/main/p/plymouth/libplymouth2_0.8.8-0ubuntu6.1_armhf.deb
+Size: 78986
+MD5sum: bff37815fb11abe3c70bde327e2c12c8
+SHA1: 86e7ba9c043b32233e1166a0bd151b1fcaa5561d
+SHA256: 02e14d2b5c4e21d8eb93bf39cafc7e814a72e2c02cfa145ca99d7c36cddc9abc
+Description: graphical boot animation and logger - shared libraries
+Multi-Arch: same
+Description-md5: 29e2ed45f3e127c38b58dae52061cc33
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: minimal
+
+Package: lightdm
+Priority: optional
+Section: x11
+Installed-Size: 404
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: armhf
+Version: 1.6.0-0ubuntu2.1
+Provides: x-display-manager
+Depends: debconf (>= 0.5) | debconf-2.0, upstart-job, libc6 (>= 2.4), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.35.9), libpam0g (>= 0.99.7.1), libxcb1, libxdmcp6, libpam-runtime (>= 0.76-14), libpam-modules, adduser, libglib2.0-bin, dbus, plymouth (>= 0.8.8-0ubuntu6.1)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Recommends: xserver-xorg, unity-greeter | lightdm-greeter | lightdm-kde-greeter
+Conflicts: liblightdm-gobject-0-0, liblightdm-qt-0-0
+Filename: pool/main/l/lightdm/lightdm_1.6.0-0ubuntu2.1_armhf.deb
+Size: 88148
+MD5sum: 0074e50d29a3a293da6d41d5acaf25db
+SHA1: 336f1c62597548d2da69cced447048bf7113229c
+SHA256: 9f4091331a71c3253db82af86a1c7aaf54ac2f57d1a9f1f754469424701fd065
+Description: Display Manager
+Homepage: https://launchpad.net/lightdm
+Description-md5: a04ec89b09d7becf8ba288295841fad0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, lubuntu-core, ubuntustudio-desktop
+
+Package: linux-doc
+Priority: optional
+Section: doc
+Installed-Size: 27350
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: all
+Source: linux
+Version: 3.8.0-19.30
+Replaces: linux-doc-3
+Conflicts: linux-doc-3
+Filename: pool/main/l/linux/linux-doc_3.8.0-19.30_all.deb
+Size: 8707908
+MD5sum: 250dbf3c94cd4e9f4494b9aa1274b731
+SHA1: 45b067282782fdd4c448a782707c2171c8b0dd3b
+SHA256: edf6a53a838b4cb8ca9d3ac82bc779d78589c85b189fd9ce847d7aa0a53f731d
+Description: Linux kernel specific documentation for version 3.8.0
+Description-md5: ce791e5696c1c1aa38d33d35dcd5430d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: linux-headers-3.8.0-19
+Priority: optional
+Section: devel
+Installed-Size: 58687
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: all
+Source: linux
+Version: 3.8.0-19.30
+Depends: coreutils | fileutils (>= 4.0)
+Filename: pool/main/l/linux/linux-headers-3.8.0-19_3.8.0-19.30_all.deb
+Size: 12177670
+MD5sum: 6d6e764b289419c3f5361274750c1d17
+SHA1: ab2c6a4b8be965ccee594939eff1b4f046acdc4a
+SHA256: 574f1db8ceac51040e334f5546300c0c97ac253942835e7cb0922a7ca697ea09
+Description: Header files related to Linux kernel version 3.8.0
+Description-md5: 326090d8b0e03a9dc9422c2bcc30ca76
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: linux-headers-3.8.0-19-generic
+Priority: optional
+Section: devel
+Installed-Size: 9590
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: armhf
+Source: linux
+Version: 3.8.0-19.30
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-headers-3.8.0-19, libc6 (>= 2.11), libgcc1 (>= 1:4.4.0)
+Filename: pool/main/l/linux/linux-headers-3.8.0-19-generic_3.8.0-19.30_armhf.deb
+Size: 976334
+MD5sum: 42fea145b8b987ce95b1acf6ac540eaf
+SHA1: ad0678413edb0d5d00d41c60217aa4c380950a66
+SHA256: 23b9d7ef8aa08d5813ef2ea9f303e96dde203df5f15c5b6cc0f6506a824352e5
+Description: Linux kernel headers for version 3.8.0 on ARM (hard float) SMP
+Description-md5: 76ed110a97bfc6092348e9db24276217
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: linux-image-3.8.0-19-generic
+Priority: optional
+Section: kernel
+Installed-Size: 76881
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: armhf
+Source: linux
+Version: 3.8.0-19.30
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, linux-image-3.0, redhat-cluster-modules
+Depends: initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
+Pre-Depends: dpkg (>= 1.10.24)
+Recommends: flash-kernel
+Suggests: fdutils, linux-doc-3.8.0 | linux-source-3.8.0, linux-tools, linux-headers-3.8.0-19-generic
+Conflicts: hotplug (<< 0.0.20040105-1)
+Filename: pool/main/l/linux/linux-image-3.8.0-19-generic_3.8.0-19.30_armhf.deb
+Size: 25326872
+MD5sum: c364621a82ad1c742b80652d87ea98bd
+SHA1: bd4a5ee66bca76292dfda847e091fbf52eb8c18b
+SHA256: af87546c188f0339458cfe2b347b2f979fe6bbc24e61093d92da36001d4b8df5
+Description: Linux kernel image for version 3.8.0 on ARM (hard float) SMP
+Description-md5: df6127a9974ef3eb3f02fe9c3d5449ad
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: linux-libc-dev
+Priority: optional
+Section: devel
+Installed-Size: 3135
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: armhf
+Source: linux
+Version: 3.8.0-19.30
+Replaces: dvb-dev (<< 1.0.1-6), libc6-dev (<< 2.3.2.ds1-6), libc6.1-dev (<< 2.3.2.ds1-6), libdrm-dev, linux-kernel-headers
+Provides: linux-kernel-headers
+Conflicts: amd64-libs-dev (<= 1.1), dvb-dev (<< 1.0.1-6), libc6-dev (<< 2.3.2.ds1-6), libc6.1-dev (<< 2.3.2.ds1-6), linux-kernel-headers
+Filename: pool/main/l/linux/linux-libc-dev_3.8.0-19.30_armhf.deb
+Size: 883596
+MD5sum: 50b08eed3a66ec6c67534bca02a69c55
+SHA1: dd149d279edb31142303160782500a689bee0114
+SHA256: 105081ea4d4ffa1a38dc1d5d66fe94c1e92134935837b89e766e7b6d5b79b7a6
+Description: Linux Kernel Headers for development
+Multi-Arch: same
+Description-md5: d5d143e6dffc891f04a85464446f9451
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Build-Essential: yes
+Origin: Ubuntu
+Task: ubuntu-desktop, ubuntu-usb, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, ubuntustudio-desktop, ubuntu-gnome-desktop
+
+Package: linux-source-3.8.0
+Priority: optional
+Section: devel
+Installed-Size: 89230
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: all
+Source: linux
+Version: 3.8.0-19.30
+Provides: linux-source, linux-source-3
+Depends: binutils, bzip2, coreutils | fileutils (>= 4.0)
+Recommends: libc-dev, gcc, make
+Suggests: libncurses-dev | ncurses-dev, kernel-package, libqt3-dev
+Filename: pool/main/l/linux/linux-source-3.8.0_3.8.0-19.30_all.deb
+Size: 88038382
+MD5sum: 7015ae28f0655bd2b2f4f08aed9c7ec4
+SHA1: 32ad9d7f265251448856a2c1163f2e6871f03068
+SHA256: 6ead00993bd40b98b0b6f6313513f4aea9af88e1c0757ecef28cbdf11e183168
+Description: Linux kernel source for version 3.8.0 with Ubuntu patches
+Description-md5: 2cc47389e6a08869c43cb079a77067d0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: linux-tools-common
+Priority: optional
+Section: kernel
+Installed-Size: 179
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: all
+Source: linux
+Version: 3.8.0-19.30
+Replaces: linux-tools (<= 2.6.32-16.25)
+Filename: pool/main/l/linux/linux-tools-common_3.8.0-19.30_all.deb
+Size: 66638
+MD5sum: 8ceb08a171908c5379656bf6376ad3af
+SHA1: e5456611266c91c1fb43c5f3d89c3b4547f5d5cd
+SHA256: c9ebb185a471ec0917265c432f64f75f7486af52c0ec1ce6d5a76981a986fe7b
+Description: Linux kernel version specific tools for version 3.8.0
+Description-md5: 82cdbfd960c61ce6ed3a2bc1966d589d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mysql-client
+Priority: optional
+Section: database
+Installed-Size: 114
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Depends: mysql-client-5.5
+Filename: pool/main/m/mysql-5.5/mysql-client_5.5.31-0ubuntu0.13.04.1_all.deb
+Size: 11282
+MD5sum: e6f0af5c40812ab1495cdf2d8a44c140
+SHA1: 3c18db6c222efeeb2a67f21b160888c5b2e6e4d0
+SHA256: b50e90d80d946785454ef9cb2b038c6d0f36fbc59dd369074849e30704581345
+Description: MySQL database client (metapackage depending on the latest version)
+Homepage: http://dev.mysql.com/
+Description-md5: c1035c33de63147bb387637ae5083656
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: mythbuntu-frontend, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-slave, mythbuntu-backend-master
+
+Package: mysql-client-5.5
+Priority: optional
+Section: database
+Installed-Size: 26475
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Replaces: mysql-client (<< 5.5.31-0ubuntu0.13.04.1), mysql-client-5.0, mysql-client-5.1
+Provides: mysql-client, mysql-client-4.1, virtual-mysql-client
+Depends: debianutils (>= 1.6), libdbi-perl, libdbd-mysql-perl (>= 1.2202), mysql-common (>= 5.5.31-0ubuntu0.13.04.1), perl, libc6 (>= 2.17), libgcc1 (>= 1:4.4.0), zlib1g (>= 1:1.1.4), mysql-client-core-5.5, libterm-readkey-perl
+Breaks: mysql-client (<< 5.5.31-0ubuntu0.13.04.1), mysql-client-5.0, mysql-client-5.1
+Filename: pool/main/m/mysql-5.5/mysql-client-5.5_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 7716684
+MD5sum: fa6a584ed95b1486b83d0468ad72e63a
+SHA1: a0bfcfde1ea1891f423d57b267830dc364886207
+SHA256: 9eaaa528207c8d4015e6db26bff6c5ddef57ebc059680a64b5db3a6f97b15be5
+Description: MySQL database client binaries
+Homepage: http://dev.mysql.com/
+Description-md5: 70aef1a292fc318f9af72aa188c17716
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: lamp-server, mythbuntu-frontend, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master
+
+Package: mysql-client-core-5.5
+Priority: optional
+Section: database
+Installed-Size: 5955
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Replaces: mysql-client (<< 5.5.31-0ubuntu0.13.04.1), mysql-client-5.0, mysql-client-core-5.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libreadline6 (>= 6.0), libstdc++6 (>= 4.4.0), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.31-0ubuntu0.13.04.1), mysql-client-5.0, mysql-client-core-5.1
+Filename: pool/main/m/mysql-5.5/mysql-client-core-5.5_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 1747596
+MD5sum: 763bb5f99166db7e050ef1c8eba33e4c
+SHA1: 482743457d97fd186c75d925c9d33bd40775bf87
+SHA256: d94d2620628b5bbf7cb0a8984fce71676de0a1089586be68d94b0791b0c21f11
+Description: MySQL database core client binaries
+Homepage: http://dev.mysql.com/
+Description-md5: 94a7aede8ba9259b1382d4dfca4cdde0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: lamp-server, kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop-gnome, mythbuntu-frontend, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master
+
+Package: mysql-common
+Priority: optional
+Section: database
+Installed-Size: 129
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Replaces: mysql-common-4.1
+Provides: mysql-common-4.1
+Conflicts: mysql-common-4.1
+Breaks: mysql-client-5.1, mysql-client-core-5.1, mysql-server-5.1, mysql-server-core-5.1
+Filename: pool/main/m/mysql-5.5/mysql-common_5.5.31-0ubuntu0.13.04.1_all.deb
+Size: 13218
+MD5sum: cece567cec0c48ec6ac5ac229e4b48d2
+SHA1: cd16563b53ae724cf66a62cbc5c1fb94dc6823bb
+SHA256: ec60576bf6d0bf0c4fdec7ccd6556da14f58c1f23f82133c025cd78f275015c8
+Description: MySQL database common files, e.g. /etc/mysql/my.cnf
+Multi-Arch: foreign
+Homepage: http://dev.mysql.com/
+Description-md5: 562d254c602f89e4390e28f6362283c8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: lamp-server, kubuntu-desktop, kubuntu-active, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop-gnome, mythbuntu-frontend, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master, ubuntustudio-desktop
+
+Package: mysql-server
+Priority: optional
+Section: database
+Installed-Size: 114
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Depends: mysql-server-5.5
+Filename: pool/main/m/mysql-5.5/mysql-server_5.5.31-0ubuntu0.13.04.1_all.deb
+Size: 11400
+MD5sum: 82da9ce0ebaa06bdffa12c368145feee
+SHA1: b96289b9b6a3333ef4223915c049836eabfa0f93
+SHA256: f1931b3760897db0c0767e5606e4b7b47e7a76d37e4bb2730cfebcf4e0a0ecfd
+Description: MySQL database server (metapackage depending on the latest version)
+Homepage: http://dev.mysql.com/
+Description-md5: e519a9c4f87658afbd1d077af63f9269
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: lamp-server, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master
+
+Package: mysql-server-5.5
+Priority: optional
+Section: database
+Installed-Size: 29034
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Replaces: libmysqlclient-dev (<< 5.5.17~), mysql-server (<< 5.5.31-0ubuntu0.13.04.1), mysql-server-4.1, mysql-server-5.0, mysql-server-5.1
+Provides: virtual-mysql-server
+Depends: mysql-client-5.5 (>= 5.5.31-0ubuntu0.13.04.1), libdbi-perl, perl (>= 5.6), libc6 (>= 2.17), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0, upstart-job, psmisc, passwd, lsb-base (>= 3.0-10), mysql-server-core-5.5 (= 5.5.31-0ubuntu0.13.04.1), upstart (>= 0.6.7-2)
+Pre-Depends: mysql-common (>= 5.5.31-0ubuntu0.13.04.1), adduser (>= 3.40), debconf
+Recommends: libhtml-template-perl
+Suggests: tinyca, mailx
+Breaks: libmysqlclient-dev (<< 5.5.17~), mysql-server (<< 5.5.31-0ubuntu0.13.04.1), mysql-server-4.1, mysql-server-5.1
+Filename: pool/main/m/mysql-5.5/mysql-server-5.5_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 8355344
+MD5sum: ddf4d992d107f5eca65f1ad1d3a6ebd7
+SHA1: 8d5f3553dcf35e96154d67ab4f6d05c0d52911c9
+SHA256: 42f95be33502520363a5783e592ebdc79f00e0ecf26b81c36d8cf5c2c9a4e317
+Description: MySQL database server binaries and system database setup
+Homepage: http://dev.mysql.com/
+Description-md5: 3ae11e16f793b3ee84f73a5fa268ad9b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: lamp-server, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master
+
+Package: mysql-server-core-5.5
+Priority: optional
+Section: database
+Installed-Size: 15217
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Replaces: mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.0, mysql-server-core-5.1
+Provides: mysql-server-core
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.17), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.2.0)
+Breaks: mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.1
+Filename: pool/main/m/mysql-5.5/mysql-server-core-5.5_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 5376686
+MD5sum: 58921c749954df05b7423496e9f4cb46
+SHA1: fe1fc1bf377d42caa047b35b9e9ff5fd589b1c78
+SHA256: 1b7c95a210fc9612af1306c1a1d8a6621a5ea79bd44c35acce46a31b2ef75671
+Description: MySQL database server binaries
+Homepage: http://dev.mysql.com/
+Description-md5: a54aa75db64667c487b6c9d3800b8153
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: lamp-server, kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop-gnome, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master
+
+Package: oem-config
+Priority: extra
+Section: admin
+Installed-Size: 267
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Replaces: oem-config-gtk (<< 1.54.13), oem-config-kde (<< 1.54.13), oem-config-keyboard, oem-config-locale, oem-config-timezone
+Depends: debconf (>= 0.5) | debconf-2.0, upstart-job, ubiquity (= 2.14.8), oem-config-frontend-2.14.8
+Conflicts: oem-config-keyboard, oem-config-locale, oem-config-timezone
+Filename: pool/main/u/ubiquity/oem-config_2.14.8_all.deb
+Size: 13240
+MD5sum: 28064610dfd9f034e3152fc6c2149b33
+SHA1: 1350beb9b05a52beb26bc55bc9136466cb487739
+SHA256: b6e18130b1dc6608519ac4d6203f9dc4c70b5407f64d6e2327020803ff472d33
+Description: Perform end-user configuration after initial OEM installation
+Description-md5: 9380d07ec19991f384138c016b142ce0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: oem-config-debconf
+Priority: extra
+Section: admin
+Installed-Size: 186
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Provides: oem-config-frontend-2.14.8
+Depends: upstart-job, oem-config (= 2.14.8), ubiquity-frontend-debconf (= 2.14.8)
+Filename: pool/main/u/ubiquity/oem-config-debconf_2.14.8_all.deb
+Size: 2986
+MD5sum: 938dd1a048936898478f2c988edf47e8
+SHA1: 810d80866fdec239a9db89568d3366ab41b7b5a8
+SHA256: 4f7116416dd5a0084d7bb03deb27056b429e779038c190848ff78d02ddb3b5bb
+Description: debconf frontend for end-user post-OEM-install configuration
+Description-md5: 0b339016cd37fb3df25a4085c60673e9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: oem-config-gtk
+Priority: extra
+Section: admin
+Installed-Size: 197
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Replaces: oem-config (<< 1.0)
+Provides: oem-config-frontend-2.14.8
+Depends: oem-config (= 2.14.8), ubiquity-frontend-gtk (= 2.14.8), python3-aptdaemon.gtk3widgets, aptdaemon
+Filename: pool/main/u/ubiquity/oem-config-gtk_2.14.8_all.deb
+Size: 4182
+MD5sum: b565b361e6c5cc1360707273668e3557
+SHA1: a5ce0167e1b1004e30a2fcea9960a56ecfb01eeb
+SHA256: 354d58475f3fa2fe27bf6a101bf5d9f6614a5c40d3b1b742ec8a0d82b4412af0
+Description: GTK+ frontend for end-user post-OEM-install configuration
+Description-md5: 8709c78036a09529b74b507a6299fd60
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth
+Priority: required
+Section: x11
+Installed-Size: 350
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Version: 0.8.8-0ubuntu6.1
+Depends: libc6 (>= 2.8), libdbus-1-3 (>= 1.1.1), libdrm2 (>= 2.4.25), libplymouth2 (= 0.8.8-0ubuntu6.1), libtinfo5, upstart-job, udev (>= 166-0ubuntu4), mountall (>= 2.0), initramfs-tools
+Recommends: plymouth-theme-ubuntu-text | plymouth-theme
+Conflicts: usplash
+Breaks: gdm (<< 3.0.4-0ubuntu11), kdm (<< 4:4.7.1-0ubuntu3), lightdm (<< 0.9.7-0ubuntu2), lubuntu-plymouth-theme (<= 0.4), lxdm (<< 0.4.1-0ubuntu2), ubuntustudio-plymouth-theme (<= 0.38), xubuntu-plymouth-theme (<< 10.04.4)
+Filename: pool/main/p/plymouth/plymouth_0.8.8-0ubuntu6.1_armhf.deb
+Size: 103518
+MD5sum: e3e9e7b3a524f3a52ebeea2bdef82278
+SHA1: d472c9998ad7423a1374eff91b7e8b8ed3096ed3
+SHA256: f7c057a73349ecaa860183d927fb2df7d09f2441550af6fa0e6d3503d890f426
+Description: graphical boot animation and logger - main package
+Description-md5: 36dd6c0b2d2e2968eb795981d2b48521
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: minimal
+
+Package: plymouth-label
+Priority: optional
+Section: x11
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-4)
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.12.0), libpango1.0-0 (>= 1.14.0), libplymouth2 (= 0.8.8-0ubuntu6.1), plymouth (= 0.8.8-0ubuntu6.1), ttf-dejavu-core
+Filename: pool/main/p/plymouth/plymouth-label_0.8.8-0ubuntu6.1_armhf.deb
+Size: 4958
+MD5sum: f6d63b67c4229f5b93aeb10a98c1d0a8
+SHA1: bd1f7daec5411d97fa500604aa14102d4f33cf04
+SHA256: f312a6e813643d8ccb9e07117fd1e2218d9a03d5e4797cbca39d1e958c9b51df
+Description: graphical boot animation and logger - label control
+Description-md5: 5811f727790d0292c01a69a6fb2044fe
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, lubuntu-core, ubuntustudio-desktop, ubuntu-gnome-desktop
+
+Package: plymouth-theme-ubuntu-logo
+Priority: optional
+Section: x11
+Installed-Size: 106
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Depends: plymouth, plymouth-label
+Filename: pool/main/p/plymouth/plymouth-theme-ubuntu-logo_0.8.8-0ubuntu6.1_armhf.deb
+Size: 20344
+MD5sum: 52064aa12ad573d0e6c6f52406930f8a
+SHA1: 7c3bf9bf42c798199801984c0bad3d8a33600f22
+SHA256: 384f4e76891c4dee3dea5499c1b2296852d6a5027234a30e9d94fb1ef26f9f35
+Description: graphical boot animation and logger - ubuntu-logo theme
+Description-md5: 8d874d448c1e27d2eef5a053231911ed
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-desktop, ubuntu-usb, edubuntu-desktop, edubuntu-usb
+
+Package: plymouth-theme-ubuntu-text
+Priority: standard
+Section: x11
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Depends: libc6 (>= 2.4), libplymouth2 (>= 0.8.0~-13~ppa1), plymouth
+Filename: pool/main/p/plymouth/plymouth-theme-ubuntu-text_0.8.8-0ubuntu6.1_armhf.deb
+Size: 7636
+MD5sum: 01f6e1d10b6d362befe1bff0d6dfabef
+SHA1: 94bc9f9d6a6ef6a4f7d3045348c7ed809168fa1a
+SHA256: 5a4e2f5011bcb8c919b590a5111110bc24e4c6e9dd61aa1f1783269acce8f731
+Description: graphical boot animation and logger - ubuntu-logo theme
+Description-md5: e64a5fbd685fee7e5864ea3986a54164
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: standard, kubuntu-active, kubuntu-active
+
+Package: ubiquity
+Priority: optional
+Section: admin
+Installed-Size: 14284
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: armhf
+Version: 2.14.8
+Replaces: espresso, espresso-grub, espresso-kbd-chooser, espresso-keyboard-setup, espresso-locale, espresso-timezone, espresso-utils, espresso-yaboot, partman, ubiquity-frontend-gtk (<< 2.3.8), ubuntu-express, user-setup (<< 0.05ubuntu6)
+Depends: libc6 (>= 2.15), libdebconfclient0 (>= 0.145), libdebian-installer4 (>= 0.85ubuntu3), libgcc1 (>= 1:4.4.0), libiw30 (>= 30~pre1), libparted0debian1 (>= 2.2-1), debconf (>= 1.5.43), upstart-job, python3 (>= 3.2.3-3~), ubiquity-frontend-2.14.8, ubiquity-artwork-2.14.8, laptop-detect, lsb-release, ubiquity-casper, python3-apt (>= 0.7.100.3~), console-setup (>= 1.70ubuntu7), iso-codes, passwd, adduser, os-prober, rdate, ecryptfs-utils, cryptsetup, python3-pyicu (>= 1.0), reiserfsprogs, language-selector-common (>= 0.4.16), archdetect-deb, dpkg-repack, apt-clone, wget, dbus-x11
+Recommends: flash-kernel, uboot-mkimage, uboot-envtools, dmraid, btrfs-tools, ubuntu-drivers-common, lvm2
+Conflicts: espresso, espresso-grub, espresso-kbd-chooser, espresso-keyboard-setup, espresso-locale, espresso-timezone, espresso-utils, espresso-yaboot, partman, ubuntu-express, user-setup (<< 0.05ubuntu6)
+Filename: pool/main/u/ubiquity/ubiquity_2.14.8_armhf.deb
+Size: 4551644
+MD5sum: 986747f7af2d7e617c77f9674c516ec0
+SHA1: dd28fd79dadd2f6d90ec831c41ab6de5079afc57
+SHA256: 40a377b3300c49c2ede36c904acbfe37639906ba3aa6cf3a5c955bf1150b68f2
+Description: Ubuntu live CD installer
+Description-md5: a02e939502ca1f257871281bbc51e7e1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-live, ubuntu-usb-live, kubuntu-live, kubuntu-active-live, kubuntu-active-live, kubuntu-active-live, edubuntu-live, edubuntu-usb-live, xubuntu-live, mythbuntu-live, lubuntu-live, ubuntustudio-dvd-live, ubuntu-gnome-live
+
+Package: ubiquity-casper
+Priority: optional
+Section: misc
+Installed-Size: 111
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: casper
+Version: 1.331
+Replaces: casper (<< 1.318)
+Depends: laptop-detect, sudo
+Breaks: casper (<< 1.318)
+Filename: pool/main/c/casper/ubiquity-casper_1.331_all.deb
+Size: 13576
+MD5sum: 9de3fb653a5cc349b271593ffa9574d4
+SHA1: 7df0f4b8ae16268511cb9b32f24932916f40bc95
+SHA256: 465dfa1e5f69dc596f6a1a77b7bbc55e4ef8cfb776be24e786bd51f2e7108d8d
+Description: Configuration hooks for live installer
+Enhances: ubiquity
+Tag: admin::boot, admin::filesystem, implemented-in::shell, protocol::smb, role::plugin, scope::utility, special::completely-tagged, works-with-format::iso9660
+Description-md5: c8d716f3fb782cd7e002d2b9dba298b2
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-live, ubuntu-usb-live, kubuntu-live, kubuntu-active-live, kubuntu-active-live, kubuntu-active-live, edubuntu-live, edubuntu-usb-live, xubuntu-live, mythbuntu-live, lubuntu-live, ubuntustudio-dvd-live, ubuntu-gnome-live
+
+Package: ubiquity-frontend-debconf
+Priority: optional
+Section: admin
+Installed-Size: 2653
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Provides: ubiquity-frontend-2.14.8
+Depends: python3 (>= 3.2.3-3~), ubiquity (= 2.14.8), debconf (>= 1.5.24ubuntu2) | cdebconf, bogl-bterm (>= 0.1.18-2ubuntu4), tasksel
+Filename: pool/main/u/ubiquity/ubiquity-frontend-debconf_2.14.8_all.deb
+Size: 451486
+MD5sum: 2563e7342f7800868f25b70c6d7a58d2
+SHA1: 787f2e38592479ab7439f06f08313816c559e4c2
+SHA256: 616c9ea40e301b774a3cb80a11b66e2e97ec72a2c868b14db6ae24498d879c19
+Description: debconf frontend for the Ubiquity live installer
+Description-md5: fa1dbae8b89fc2e16547475097735858
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ubiquity-frontend-gtk
+Priority: optional
+Section: admin
+Installed-Size: 696
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: armhf
+Source: ubiquity
+Version: 2.14.8
+Replaces: espresso-frontend-gtk, ubiquity (<< 2.4.3), ubuntu-express-frontend-gtk
+Provides: indicator-renderer, ubiquity-frontend-2.14.8
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.22.0), libgtk-3-0 (>= 3.0.0), libindicator3-7 (>= 0.4.90), libx11-6, python3 (>= 3.2.3-3~), ubiquity (= 2.14.8), python3-dbus, gir1.2-gtk-3.0, gir1.2-soup-2.4, gir1.2-vte-2.90, gir1.2-webkit-3.0, iso-codes, metacity | xfwm4 | matchbox-window-manager | lubuntu-default-settings | openbox, gksu, gir1.2-xkl-1.0, gir1.2-timezonemap-1.0, python3-gi, python3-cairo, python3-gi-cairo, gir1.2-appindicator3-0.1, busybox-static | busybox
+Suggests: gnome-control-center | feh
+Conflicts: espresso-frontend-gtk, ubiquity (<< 2.4.3), ubuntu-express-frontend-gtk
+Filename: pool/main/u/ubiquity/ubiquity-frontend-gtk_2.14.8_armhf.deb
+Size: 60096
+MD5sum: 720aed1d4091e7a5ad28e1cf5f8a82b0
+SHA1: f8f0b39b5a84db7fc18404e23ad0d47a2976f13b
+SHA256: 5c64578fc9e929d3d7fbb2ff62a150c3b050de8dc5354565ce2340161405bc69
+Description: GTK+ frontend for Ubiquity live installer
+Description-md5: 44de7bf97742fb6f9f2aaa099078ef33
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-live, ubuntu-usb-live, edubuntu-live, edubuntu-usb-live, xubuntu-live, mythbuntu-live, lubuntu-live, ubuntustudio-dvd-live, ubuntu-gnome-live
+
+Package: ubiquity-ubuntu-artwork
+Priority: optional
+Section: admin
+Installed-Size: 760
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Replaces: espresso-ubuntu-artwork, espresso-ubuntu-doc, ubiquity (<< 1.13.0), ubiquity-ubuntu-doc, ubuntu-express-ubuntu-artwork, ubuntu-express-ubuntu-doc
+Provides: ubiquity-artwork-2.14.8
+Conflicts: espresso-ubuntu-artwork, espresso-ubuntu-doc, ubiquity-ubuntu-doc, ubuntu-express-ubuntu-artwork, ubuntu-express-ubuntu-doc
+Filename: pool/main/u/ubiquity/ubiquity-ubuntu-artwork_2.14.8_all.deb
+Size: 524670
+MD5sum: dc5c2efaafcc7c2c26330526621d6016
+SHA1: 3695387a13057e857832ca4bb5ea081f960d0354
+SHA256: 6ce3f1e1f1c5f930aca0f79daebf23957acf5c11cd5788af7f8a09100e0bd078
+Description: Ubuntu artwork for Ubiquity live installer
+Description-md5: a7bbb2b9a8b2a3fbc7110f5a8d336a36
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-live, ubuntu-usb-live, kubuntu-live, kubuntu-active-live, kubuntu-active-live, kubuntu-active-live, edubuntu-live, edubuntu-usb-live, xubuntu-live, mythbuntu-live, lubuntu-live, ubuntustudio-dvd-live, ubuntu-gnome-live
+
+Package: xdiagnose
+Priority: optional
+Section: python
+Installed-Size: 746
+Maintainer: Bryce Harrington <bryce@ubuntu.com>
+Architecture: all
+Version: 3.5.1
+Replaces: x11-common (<< 1:7.6+7ubuntu1), xorg (<< 1:7.6+7ubuntu1), xserver-xorg-video-intel (<= 2:2.14.0-4ubuntu8)
+Depends: upstart-job, python3 (>= 3.2.3-3~), python3-gi (>= 3.2.0-3), gir1.2-gtk-3.0, python3-apport, librsvg2-2, librsvg2-common, policykit-1
+Recommends: intel-gpu-tools
+Conflicts: ubuntu-defaults-nexus7 (<= 0.39), x11-common (<< 1:7.6+7ubuntu1)
+Filename: pool/main/x/xdiagnose/xdiagnose_3.5.1_all.deb
+Size: 117004
+MD5sum: 592632704459c35b6a26fac130ca6962
+SHA1: 70ad855e7a0f09bdd1d2183d284a6937e8d2aefa
+SHA256: d14e2be9b163ee9f426cbb6e32be7d99017865934461f0cac283ae0c626f5f40
+Description: X.org diagnosis tool
+Homepage: http://wiki.ubuntu.com/X
+Description-md5: ceca96828e411b7ecc73f81dd97854fb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-full, kubuntu-active-full, edubuntu-desktop, edubuntu-usb, ubuntu-gnome-desktop
+

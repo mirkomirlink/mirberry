@@ -1,0 +1,5 @@
+deb http://ports.ubuntu.com/ubuntu-ports/ raring main universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports/ raring main universe multiverse
+
+deb http://ports.ubuntu.com/ubuntu-ports/ raring-updates main universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports/ raring-updates main universe multiverse

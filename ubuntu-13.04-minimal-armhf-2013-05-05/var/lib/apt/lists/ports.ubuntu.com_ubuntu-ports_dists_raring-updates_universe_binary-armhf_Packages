@@ -1,0 +1,530 @@
+Package: clamav-milter
+Priority: extra
+Section: universe/utils
+Installed-Size: 629
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Depends: libc6 (>= 2.15), libmilter1.0.1, clamav-base (>= 0.97.8+dfsg-1ubuntu1.13.04.1), clamav-freshclam | clamav-data, lsb-base (>= 3.2-13), debconf (>= 0.5) | debconf-2.0, adduser, ucf, logrotate
+Recommends: clamav-daemon
+Suggests: daemon, clamav-docs
+Filename: pool/universe/c/clamav/clamav-milter_0.97.8+dfsg-1ubuntu1.13.04.1_armhf.deb
+Size: 144118
+MD5sum: 51c4347666db26eeab507f489b96497d
+SHA1: ff6a5a422315bb3c75e2ba88afe37325c9ca6bc2
+SHA256: 9a989382e15b4cbd945abec0642ce29c660a12d76dc452689ed6e73bc9b47bac
+Description: anti-virus utility for Unix - sendmail integration
+Homepage: http://www.clamav.net/
+Description-md5: bdf4d5012233691e2d3d904e79a57dcf
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: clamav-testfiles
+Priority: optional
+Section: universe/utils
+Installed-Size: 6726
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: all
+Source: clamav
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Filename: pool/universe/c/clamav/clamav-testfiles_0.97.8+dfsg-1ubuntu1.13.04.1_all.deb
+Size: 5056016
+MD5sum: f19d7fe54a6d9b6519dacf608211641a
+SHA1: ff724f804a7c5f3c2b009ea5d84fee0721fc044a
+SHA256: ea8eb1b9c0a125f5563e7d2833418d7bf9f353e24a491084a6164f57d6be6922
+Description: anti-virus utility for Unix - test files
+Homepage: http://www.clamav.net/
+Description-md5: 02a1eb16b2a0a9f53fc09fe0d784518c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libmuonprivate1
+Priority: optional
+Section: universe/kde
+Installed-Size: 979
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Architecture: armhf
+Source: muon
+Version: 2.0.0-0ubuntu3.1
+Replaces: muon-installer (<< 1.3.65-0ubuntu2)
+Depends: libattica0.4 (>= 0.4.0), libc6 (>= 2.4), libdebconf-kde0, libgcc1 (>= 1:4.4.0), libkdecore5 (>= 4:4.6.2), libkdeui5 (>= 4:4.3.4), libkio5 (>= 4:4.3.4), libknewstuff3-4 (>= 4:4.7.0), libphonon4 (>= 4:4.2.0), libqapt2 (>= 1.9.65), libqjson0 (>= 0.7.1), libqoauth1, libqt4-dbus (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libsolid4 (>= 4:4.3.4), libstdc++6 (>= 4.4.0), phonon, kdesudo, software-properties-kde
+Breaks: muon-installer (<< 1.3.65-0ubuntu2)
+Filename: pool/universe/m/muon/libmuonprivate1_2.0.0-0ubuntu3.1_armhf.deb
+Size: 177056
+MD5sum: 380278a308c353994683fa0183b843ec
+SHA1: 36d40e02b861b9aab4306bf3691e8d7e3f61a10b
+SHA256: c8139b859fb04e554ed8f8ba48404df957d0864eaef751ea565f5b383922c27c
+Description: Runtime files for the Muon package management suite
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Description-md5: c0a1b42a6c8a1d6ac2363a6d3a141aa3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active
+
+Package: libmysqld-pic
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 13177
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Depends: libmysqlclient-dev (>= 5.5.31-0ubuntu0.13.04.1)
+Filename: pool/universe/m/mysql-5.5/libmysqld-pic_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 4465836
+MD5sum: 1fad8d7c752e4bde92a820146e560207
+SHA1: fe7ae825405e1616d4430d95bc512092c7f54027
+SHA256: 76a13a20f1d9e76f5ebe8515cacd1f18a4b7e04c7024e343d49e2ce830814806
+Description: MySQL database development files
+Homepage: http://dev.mysql.com/
+Description-md5: a6e7a6d26021d6ef468e70ec4ac81167
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: muon
+Priority: optional
+Section: universe/kde
+Installed-Size: 1305
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Architecture: armhf
+Version: 2.0.0-0ubuntu3.1
+Depends: kde-runtime, libc6 (>= 2.4), libdebconf-kde0, libgcc1 (>= 1:4.4.0), libkdecore5 (>= 4:4.3.4), libkdeui5 (>= 4:4.4.0), libkio5 (>= 4:4.3.4), libmuonprivate1 (= 2.0.0-0ubuntu3.1), libqapt2 (>= 1.9.80), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.4.0), libqapt2-runtime, apt-xapian-index
+Recommends: muon-updater
+Filename: pool/universe/m/muon/muon_2.0.0-0ubuntu3.1_armhf.deb
+Size: 193956
+MD5sum: bc086004c546e28b6a2619bfe2ff5305
+SHA1: c4a776c744924d28b32276ee6deaabf71908e2a1
+SHA256: 77167a601a79e6518b3db3a68c3ad4d67acb1ede18ab71749b3330e149a163a1
+Description: package manager for KDE
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Description-md5: d0764060b8494cbe357e5b35a8a849b8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active-desktop, kubuntu-active-full
+
+Package: muon-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 10041
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Architecture: armhf
+Source: muon
+Version: 2.0.0-0ubuntu3.1
+Depends: libmuonprivate1 (= 2.0.0-0ubuntu3.1), muon (= 2.0.0-0ubuntu3.1) | muon-updater (= 2.0.0-0ubuntu3.1) | muon-notifier (= 2.0.0-0ubuntu3.1)
+Recommends: qapt-dbg, kdelibs5-dbg
+Filename: pool/universe/m/muon/muon-dbg_2.0.0-0ubuntu3.1_armhf.deb
+Size: 9671884
+MD5sum: d309e86b3c5f75b48ba2b3c41d5af032
+SHA1: 9172b86232cbd3721b7f3fd329d6a982f045d718
+SHA256: 67f811a3d8afc37ef74c702d74101a8278ca0422615ebf68b88064440c9210e1
+Description: Muon debugging symbols
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Description-md5: 83ab654a809e56129d4ea5474bb3ed33
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: muon-discover
+Priority: optional
+Section: universe/kde
+Installed-Size: 811
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Architecture: armhf
+Source: muon
+Version: 2.0.0-0ubuntu3.1
+Depends: kde-runtime, libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libkdeclarative5 (>= 4:4.7.0), libkdecore5 (>= 4:4.3.4), libkdeui5 (>= 4:4.3.4), libmuonprivate1 (= 2.0.0-0ubuntu3.1), libplasma3 (>= 4:4.4.4-2~), libqapt2 (>= 1.3.80), libqt4-declarative (>= 4:4.7.0~rc1), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.4.0), libqapt2-runtime, app-install-data, apt-xapian-index
+Recommends: app-install-data-partner, ubuntu-sso-client
+Filename: pool/universe/m/muon/muon-discover_2.0.0-0ubuntu3.1_armhf.deb
+Size: 124676
+MD5sum: c9ccd4af7e5b31ce9d31e012e918b30b
+SHA1: 1fe6b1dd2489620e03ff6daf5929399dbc7a0f2a
+SHA256: c5fd1f7e69c3c6bc1608c03f3904753fed9236b50cd0895ac3739cb972124b72
+Description: Utility for browsing, installing, and removing applications
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Description-md5: 3f2baea144676a2404459b5d3dac09ea
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: muon-installer
+Priority: optional
+Section: universe/kde
+Installed-Size: 782
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Architecture: armhf
+Source: muon
+Version: 2.0.0-0ubuntu3.1
+Depends: kde-runtime, libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libkdecore5 (>= 4:4.3.4), libkdeui5 (>= 4:4.7.0), libkio5 (>= 4:4.4.0), libmuonprivate1 (= 2.0.0-0ubuntu3.1), libqapt2 (>= 0.3.0), libqt4-declarative (>= 4:4.7.0~rc1), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.2), libstdc++6 (>= 4.4.0), libqapt2-runtime, app-install-data, apt-xapian-index
+Recommends: app-install-data-partner
+Filename: pool/universe/m/muon/muon-installer_2.0.0-0ubuntu3.1_armhf.deb
+Size: 96060
+MD5sum: 63854597544bfc0e3a417bfdf69e3326
+SHA1: 44fc430f043390eba1dd55a4564459958c4396a5
+SHA256: 4698e5c4b89ac14690e0459479b7633736c676d52e42387124714f204e7e4274
+Description: Utility for browsing, installing, and removing applications
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Description-md5: 492a6b75e21703ec48e232f0d1648d44
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active
+
+Package: muon-notifier
+Priority: optional
+Section: universe/kde
+Installed-Size: 525
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Architecture: armhf
+Source: muon
+Version: 2.0.0-0ubuntu3.1
+Depends: libc6 (>= 2.4), libkdecore5 (>= 4:4.4.95), libkdeui5 (>= 4:4.4.0), libqt4-dbus (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.4.0), muon-updater, ubuntu-release-upgrader-qt, update-notifier-common
+Filename: pool/universe/m/muon/muon-notifier_2.0.0-0ubuntu3.1_armhf.deb
+Size: 30062
+MD5sum: c297ea9d30201b24d58cbd2d5dbc7295
+SHA1: f4c2049f82a86e69b3f4972e5daac46c1313ac5d
+SHA256: cee1d2ff302f5da43dab978fc42d1ca3a5c786b8b50a3ad06e0169a260da1c40
+Description: update notifier for KDE
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Description-md5: 8908b0c80c694fd60989543a956db1ed
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active
+
+Package: muon-updater
+Priority: optional
+Section: universe/kde
+Installed-Size: 735
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Architecture: armhf
+Source: muon
+Version: 2.0.0-0ubuntu3.1
+Depends: kde-runtime, libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libkdecore5 (>= 4:4.4.0), libkdeui5 (>= 4:4.7.0), libkio5 (>= 4:4.3.4), libmuonprivate1 (= 2.0.0-0ubuntu3.1), libqapt2 (>= 1.9.65), libqtcore4 (>= 4:4.7.0~beta2), libqtgui4 (>= 4:4.5.3), libsolid4 (>= 4:4.3.4), libstdc++6 (>= 4.1.1), libqapt2-runtime
+Recommends: muon-notifier
+Filename: pool/universe/m/muon/muon-updater_2.0.0-0ubuntu3.1_armhf.deb
+Size: 72846
+MD5sum: ddb693944761bb779be38e422be44a92
+SHA1: 62175ca8407bf3ffa52054e2ba97950c8df029ad
+SHA256: f36e283380e4507efeb3cdb43651b3bfbba9bdfab962684ad55f8516ed0aba1d
+Description: update manager for KDE
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Description-md5: 9d647e68762ae25944f45e89608f823a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active
+
+Package: mysql-source-5.5
+Priority: optional
+Section: universe/database
+Installed-Size: 22114
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Filename: pool/universe/m/mysql-5.5/mysql-source-5.5_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 21689898
+MD5sum: 6976a52b6980f1e7f37dc921271fd638
+SHA1: 559152ba27fdb9cbfb81429808b9a9760f9f71c3
+SHA256: b54f890625ae0faaf4dbb99fd2123c700fa52419e797d145a623e9d23781c1db
+Description: MySQL source
+Homepage: http://dev.mysql.com/
+Description-md5: 9bacc0267862ea6c169da6cfe76d3aef
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mysql-testsuite
+Priority: optional
+Section: universe/database
+Installed-Size: 114
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Depends: mysql-testsuite-5.5
+Filename: pool/universe/m/mysql-5.5/mysql-testsuite_5.5.31-0ubuntu0.13.04.1_all.deb
+Size: 11264
+MD5sum: 88ecfb8b43f0a9a67c38519ee00e2a5a
+SHA1: f8213afa68b8e29c6295721b49183bf6491be7de
+SHA256: ac12b486d23f6b53271639ef7a3e196d07f2be00203d8dfd78066a95fb19ce4b
+Description: MySQL testsuite
+Homepage: http://dev.mysql.com/
+Description-md5: a3c0fd28b808fa1a0d62a5bfb5ba8923
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mysql-testsuite-5.5
+Priority: optional
+Section: universe/database
+Installed-Size: 108682
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: armhf
+Source: mysql-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Depends: mysql-server, mysql-client, libc6 (>= 2.4)
+Conflicts: mysql-testsuite (<< 5.5.31-0ubuntu0.13.04.1)
+Filename: pool/universe/m/mysql-5.5/mysql-testsuite-5.5_5.5.31-0ubuntu0.13.04.1_armhf.deb
+Size: 8735334
+MD5sum: 7661f936cd3ced1a19fb3fc64e0f01cc
+SHA1: b4ae7d25dba59d050e806c1fd8472c2a48b7595e
+SHA256: 73b8d20e22760361b0e4e9272fcedf70edae826a6703133f3d81554928eb44e3
+Description: MySQL testsuite
+Homepage: http://dev.mysql.com/
+Description-md5: 3e88fc28903eb44dd0b2a0eb9f813181
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: oem-config-kde
+Priority: extra
+Section: universe/admin
+Installed-Size: 194
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Replaces: oem-config (<< 1.0)
+Provides: oem-config-frontend-2.14.8
+Depends: oem-config (= 2.14.8), ubiquity-frontend-kde (= 2.14.8)
+Filename: pool/universe/u/ubiquity/oem-config-kde_2.14.8_all.deb
+Size: 3026
+MD5sum: b36c48dc0c053dabfd6a465c9fa38979
+SHA1: 789befb678ce0ad0fca0eed6ff629c6a77eb6c71
+SHA256: 2c418c4eec6ee420de5664b4f078823cf51cc5538dee78d7ad8f4efd7c3322d3
+Description: KDE frontend for end-user post-OEM-install configuration
+Description-md5: 97a76af3c01b8626949160b1d8f526ba
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: oem-config-remaster
+Priority: optional
+Section: universe/admin
+Installed-Size: 181
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Depends: genisoimage, gnupg, apt-utils
+Filename: pool/universe/u/ubiquity/oem-config-remaster_2.14.8_all.deb
+Size: 5598
+MD5sum: b30ecd96a602f269cf3683943067a603
+SHA1: f9142bac7b8de705f79af7bbd84890c1aa85513d
+SHA256: 24a60695731dfbec350ed266fc3bf9a6ca2a560545f239572e633070bc7afa2b
+Description: Remaster a CD with additional oem-config functionality
+Description-md5: b888546fc6f218e1af4c6b8e46901fd5
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth-theme-fade-in
+Priority: optional
+Section: universe/x11
+Installed-Size: 111
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Depends: libc6 (>= 2.8), libplymouth2 (>= 0.8.0~-13~ppa1), plymouth, plymouth-label
+Filename: pool/universe/p/plymouth/plymouth-theme-fade-in_0.8.8-0ubuntu6.1_armhf.deb
+Size: 35032
+MD5sum: 266c98a2ea382f583059dbdb0bd9f608
+SHA1: 99f4353334be68d8beb4b7728974dd9024ad72da
+SHA256: 1e11928434363e45398ba4490f0706dff130591688f987b4c053c3b74720e1ad
+Description: graphical boot animation and logger - fade-in theme
+Description-md5: efc0a4e57cc60e6f31a0cfc518d0b355
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth-theme-glow
+Priority: optional
+Section: universe/x11
+Installed-Size: 272
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Depends: libc6 (>= 2.8), libplymouth2 (>= 0.8.8-0ubuntu1), plymouth, plymouth-label
+Filename: pool/universe/p/plymouth/plymouth-theme-glow_0.8.8-0ubuntu6.1_armhf.deb
+Size: 155332
+MD5sum: b6989eb800cc9a1118012b2ced88dac3
+SHA1: e8ebb6d566e6b74e2117f8baf0338365be66ffc6
+SHA256: 15e96330623b3b9fe94747fbb7d9f067f92802874d2060c88d4c7d52529e9ed2
+Description: graphical boot animation and logger - glow theme
+Description-md5: fd83f5b3b39eb37bdb9b263ddd537b92
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth-theme-script
+Priority: optional
+Section: universe/x11
+Installed-Size: 69
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Depends: plymouth, plymouth-label
+Filename: pool/universe/p/plymouth/plymouth-theme-script_0.8.8-0ubuntu6.1_armhf.deb
+Size: 7312
+MD5sum: 7cff7aa8da9ac6216496423fa08e09ef
+SHA1: 3c8c8979dfd67442e7e83b167f1e37b17c930d65
+SHA256: d923f2d0ab37cea0941af89b33d7f62b34fb92aebe0d6a94139228556427b2db
+Description: graphical boot animation and logger - script theme
+Description-md5: 6ab1e0acb8bfbad08f93b9ef475dfc32
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth-theme-solar
+Priority: optional
+Section: universe/x11
+Installed-Size: 440
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Provides: plymouth-theme
+Depends: libc6 (>= 2.8), libplymouth2 (>= 0.8.0~-13~ppa1), plymouth, plymouth-label
+Filename: pool/universe/p/plymouth/plymouth-theme-solar_0.8.8-0ubuntu6.1_armhf.deb
+Size: 368022
+MD5sum: ed358a0ddc8b92da848b841685faec92
+SHA1: 2d2c2bc67d95eefd4d898768a786975d0058b752
+SHA256: e3707f11367f8835dfb2ce12525cd7c61740b913111c662dfb23c76dc0f4b32f
+Description: graphical boot animation and logger - solar theme
+Description-md5: a05050529bca7085989e0f452ac47223
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth-theme-spinfinity
+Priority: optional
+Section: universe/x11
+Installed-Size: 99
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Depends: libc6 (>= 2.8), libplymouth2 (>= 0.8.0~-13~ppa1), plymouth, plymouth-label
+Filename: pool/universe/p/plymouth/plymouth-theme-spinfinity_0.8.8-0ubuntu6.1_armhf.deb
+Size: 18322
+MD5sum: 1065387ba574c0c5daac2abe1ec523b4
+SHA1: cd90ab1593c09dd6c8eeace4232ca9ea8e52e254
+SHA256: 82f47e650b7a059bb95a8cd7a5ad70158fd4fe9d771da9e26130871523f4334d
+Description: graphical boot animation and logger - spinfinity theme
+Description-md5: d22e6ece21f0eea458ae7c05edd0a2b2
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth-theme-text
+Priority: optional
+Section: universe/x11
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Depends: libc6 (>= 2.4), libplymouth2 (>= 0.8.0~-13~ppa1), plymouth
+Filename: pool/universe/p/plymouth/plymouth-theme-text_0.8.8-0ubuntu6.1_armhf.deb
+Size: 7158
+MD5sum: 71671b43993500561ecf37832489e62f
+SHA1: 94cd8e6b71467a2d1a3e3504172ce2a2118e40e8
+SHA256: e46a6ea276cdc492eb1b8be3146b6f86f004a26efb92db24563fe6a663be024d
+Description: graphical boot animation and logger - text theme
+Description-md5: 70944c5b54f1648dabab835c78a4bf4c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: plymouth-x11
+Priority: optional
+Section: universe/x11
+Installed-Size: 89
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: armhf
+Source: plymouth
+Version: 0.8.8-0ubuntu6.1
+Replaces: plymouth (<< 0.8.0~-9)
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.18.0), libpango1.0-0 (>= 1.14.0), libplymouth2 (= 0.8.8-0ubuntu6.1), plymouth (= 0.8.8-0ubuntu6.1)
+Filename: pool/universe/p/plymouth/plymouth-x11_0.8.8-0ubuntu6.1_armhf.deb
+Size: 12018
+MD5sum: 1e75ce85be76286a598250264ec89700
+SHA1: 8ffb6526c20da9f164a859267b718e5db1b63ec6
+SHA256: f72b3e44b0e70195d962ce87df68fa49a0e2a1be43ea1af4fa133ff3519a3bbe
+Description: graphical boot animation and logger - X11 interface
+Description-md5: 9f1a92f7b5eccaeda62ed2595a6135c0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ubiquity-frontend-kde
+Priority: optional
+Section: universe/admin
+Installed-Size: 930
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Source: ubiquity
+Version: 2.14.8
+Provides: ubiquity-frontend-2.14.8
+Depends: python3 (>= 3.2.3-3~), ubiquity (= 2.14.8), python3-pyqt4, kde-window-manager, xauth, python3-dbus, python3-dbus.mainloop.qt
+Filename: pool/universe/u/ubiquity/ubiquity-frontend-kde_2.14.8_all.deb
+Size: 472290
+MD5sum: c7c1e8762a4ea6c44bcec0a36968727d
+SHA1: fd2e7d19d97d6b33470df13dceed15fbeee3eef3
+SHA256: 3708d41209362e82dfd9d74b64acc63d07eac884e9ccf5418abe899b58de219b
+Description: KDE frontend for Ubiquity live installer
+Description-md5: 18525a27bf09029b1b67c008f57f3d0b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: kubuntu-live, kubuntu-active-live, kubuntu-active-live, kubuntu-active-live
+
+Package: xen-docs-4.2
+Priority: optional
+Section: universe/doc
+Installed-Size: 658
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: all
+Source: xen
+Version: 4.2.1-0ubuntu3.1
+Filename: pool/universe/x/xen/xen-docs-4.2_4.2.1-0ubuntu3.1_all.deb
+Size: 631960
+MD5sum: 8dacf0a4e6cfad988b64b45c37e24a59
+SHA1: b2d4c75390a91fb47a70f7971f2a7292f04ea9fb
+SHA256: d1f66920f84ca467b8bd6654a0b885bd363dfa8258666880ab89af21ce1035c9
+Description: Documentation for Xen
+Description-md5: 6cae9b51dadf4d0824b74e2b7ff1077f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xen-utils-common
+Priority: optional
+Section: universe/kernel
+Installed-Size: 301
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: all
+Source: xen
+Version: 4.2.1-0ubuntu3.1
+Depends: gawk, lsb-base, python, udev, xenstore-utils, ucf
+Filename: pool/universe/x/xen/xen-utils-common_4.2.1-0ubuntu3.1_all.deb
+Size: 106700
+MD5sum: 7dc71684bf4bd5b535fb38ef6d35faa0
+SHA1: 82a150de5542cf90423a61d6811f98783c0dd2c5
+SHA256: 23e8463ebbc1c53842c66651b66912b35c804b9f39ae4415b5220382c6dbce91
+Description: Xen administrative tools - common files
+Description-md5: 8af52ba7dfa8ab5d2f2013a4e86ceb1e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+

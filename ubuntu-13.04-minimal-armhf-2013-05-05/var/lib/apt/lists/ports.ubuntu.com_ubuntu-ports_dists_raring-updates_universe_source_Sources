@@ -1,0 +1,34 @@
+Package: muon
+Binary: muon, muon-installer, muon-discover, muon-updater, muon-notifier, libmuonprivate1, muon-dbg
+Version: 2.0.0-0ubuntu3.1
+Priority: optional
+Section: universe/kde
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.5.0), cmake, pkg-config, kdelibs5-dev, libqapt-dev (>= 1.9.80), libdebconf-kde-dev, libqjson-dev, libqoauth-dev, libattica-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/m/muon
+Files:
+ 467a4f9ce49c962c3b1c00058a5850bb 2239 muon_2.0.0-0ubuntu3.1.dsc
+ ceb62f65a3575bdc087b99868236c547 530261 muon_2.0.0.orig.tar.bz2
+ 7dcbefc13289df640f2a30496cd6e113 9219 muon_2.0.0-0ubuntu3.1.debian.tar.gz
+Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
+Package-List: 
+ libmuonprivate1 deb kde optional
+ muon deb kde optional
+ muon-dbg deb debug extra
+ muon-discover deb kde optional
+ muon-installer deb kde optional
+ muon-notifier deb kde optional
+ muon-updater deb kde optional
+Checksums-Sha1:
+ ccf3899658aca256b4abbc8a550b01a4ac2db2a3 2239 muon_2.0.0-0ubuntu3.1.dsc
+ cf34d118ceed96a9b49be64205f22c4c0e089e48 530261 muon_2.0.0.orig.tar.bz2
+ 520e77fecca00c0ca66cb9d19f34680f73d9117f 9219 muon_2.0.0-0ubuntu3.1.debian.tar.gz
+Checksums-Sha256:
+ 2f087d5b9df1d547b8764095edb000e41f4484964459cf39d4bd34930b2f043e 2239 muon_2.0.0-0ubuntu3.1.dsc
+ 05b07ac08dcb1996b5f2f8cbc81d8a2ad83722e31196f718cee7c025f642abe1 530261 muon_2.0.0.orig.tar.bz2
+ ec0c3c82a0dc27543a0dca490dbb55e864aa9300623546c9ea1299e1e202ac13 9219 muon_2.0.0-0ubuntu3.1.debian.tar.gz
+

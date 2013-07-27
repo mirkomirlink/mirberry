@@ -1,0 +1,15 @@
+3579a00569991bbae386a9ede2113b9b  lib/udev/rules.d/40-i2c-tools.rules
+10d6ee85d1de430ced72e65c643af7dd  usr/bin/ddcmon
+76f2ee7682c43066cb71353be86647cb  usr/bin/decode-dimms
+e4bc82d3b8463acb8252ded03a14199d  usr/bin/decode-edid
+ac83cf087066c6478f54f928d2a9f095  usr/bin/decode-vaio
+0b18173a738c1097057955e3c5d81528  usr/sbin/i2cdetect
+38f136f0a4ef122f02dc842cd54670eb  usr/sbin/i2cdump
+2f5b9152726f0a7d390b12fbff0f4470  usr/sbin/i2cget
+cd8ef18725c920b50b110b0d84fa740d  usr/sbin/i2cset
+92c2b7aef4f266239b68f4a3857b8484  usr/share/doc/i2c-tools/changelog.Debian.gz
+c12a7f078cfd7e9b255ac0caa62e13fa  usr/share/doc/i2c-tools/copyright
+0a5730a88811ba9318a2a9928654af1a  usr/share/man/man8/i2cdetect.8.gz
+e73bd4fb3a62452d34283d80d6c81b63  usr/share/man/man8/i2cdump.8.gz
+ade9906c04404c8697bf766d7208726a  usr/share/man/man8/i2cget.8.gz
+c4f8cbe32976a67aa34ec74665ea0e6b  usr/share/man/man8/i2cset.8.gz

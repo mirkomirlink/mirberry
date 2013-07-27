@@ -1,0 +1,12 @@
+d452acfcbbca9f831a00db7deb82bbab  usr/share/doc/python-software-properties/AUTHORS
+6ff0bedc540baa621b8ef9ccc212039b  usr/share/doc/python-software-properties/README
+dd5bbca91225f9394188adfce26242ba  usr/share/doc/python-software-properties/TODO
+e78e4f62b1136f9fb070705ddef3ad3c  usr/share/doc/python-software-properties/changelog.gz
+c4a52dbcd4545f975c9789c8356a3746  usr/share/doc/python-software-properties/copyright
+6c9e9d197ddf6aa3978b559545bdfdba  usr/share/pyshared/softwareproperties/AptAuth.py
+38194faef9ae3053387ef8f94d9c3ad5  usr/share/pyshared/softwareproperties/CountryInformation.py
+ff38c8d575de724abcfe1ec75678e45a  usr/share/pyshared/softwareproperties/MirrorTest.py
+d4c99feac4ba84f8f5f3ef463ad28d10  usr/share/pyshared/softwareproperties/SoftwareProperties.py
+3b8904c7cabcf447b054111ea22955d9  usr/share/pyshared/softwareproperties/__init__.py
+2362d74d21a1af443b44595abe3315b6  usr/share/pyshared/softwareproperties/distro.py
+3a8d45bd3634dbe53d0d498483ed1239  usr/share/pyshared/softwareproperties/ppa.py

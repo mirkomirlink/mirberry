@@ -1,0 +1,444 @@
+Package: casper
+Binary: casper, ubiquity-casper
+Version: 1.331
+Priority: optional
+Section: misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), lsb-release, libplymouth-dev (>= 0.8.0~-13), pkg-config
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/main/c/casper
+Files:
+ 982651731b68d5cabadaed5ef0d0b786 1579 casper_1.331.dsc
+ 664b345e624540f9522ff91a930c2c05 101763 casper_1.331.tar.gz
+Vcs-Bzr: https://code.launchpad.net/+branch/ubuntu/casper
+Package-List: 
+ casper deb misc extra
+ ubiquity-casper deb misc optional
+Checksums-Sha1:
+ 324d11553d996ac1716cb174dc382ff6044c4e66 1579 casper_1.331.dsc
+ a75e3ce1225f44825ac31964e49de6943194dd7a 101763 casper_1.331.tar.gz
+Checksums-Sha256:
+ 7b5f3e687a665fce537c21484af0ccd9127f090158d54fdba2028f505930ff19 1579 casper_1.331.dsc
+ 8b94a7d30c874b057f331d4372907b5baff0cbef09c3d837585ba18645ef1b82 101763 casper_1.331.tar.gz
+
+Package: clamav
+Binary: clamav-base, clamav-docs, clamav-dbg, clamav, libclamav-dev, libclamav6, clamav-daemon, clamav-testfiles, clamav-freshclam, clamav-milter
+Version: 0.97.8+dfsg-1ubuntu1.13.04.1
+Priority: optional
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 6.0.7), po-debconf, zlib1g-dev, libbz2-dev, libmilter-dev, perl, bc, check, libtommath-dev, libltdl-dev, libncurses5-dev, python
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/c/clamav
+Files:
+ 9fe711497421a73d6c0522d4428ab09f 2348 clamav_0.97.8+dfsg-1ubuntu1.13.04.1.dsc
+ 7f55d72075d28d80e4421d7765f9251d 12923074 clamav_0.97.8+dfsg.orig.tar.gz
+ 7938f3211151db2e0da42f38c73330b9 302083 clamav_0.97.8+dfsg-1ubuntu1.13.04.1.diff.gz
+Uploaders: Stephen Gran <sgran@debian.org>, Michael Meskes <meskes@debian.org>, Michael Tautschnig <mt@debian.org>, Scott Kitterman <scott@kitterman.com>
+Homepage: http://www.clamav.net/
+Vcs-Browser: http://git.debian.org/?p=pkg-clamav/clamav.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-clamav/clamav.git
+Package-List: 
+ clamav deb utils optional
+ clamav-base deb utils optional
+ clamav-daemon deb utils optional
+ clamav-dbg deb debug extra
+ clamav-docs deb doc optional
+ clamav-freshclam deb utils optional
+ clamav-milter deb utils extra
+ clamav-testfiles deb utils optional
+ libclamav-dev deb libdevel optional
+ libclamav6 deb libs optional
+Checksums-Sha1:
+ 637e50bf3a96af3169110d3baec503d6dc9bc8f6 2348 clamav_0.97.8+dfsg-1ubuntu1.13.04.1.dsc
+ 9178839d7dfd64c4a4607de8b6424802f0908abe 12923074 clamav_0.97.8+dfsg.orig.tar.gz
+ a8266d1285480a3d1f8cb86b44ba5cbdda282d78 302083 clamav_0.97.8+dfsg-1ubuntu1.13.04.1.diff.gz
+Checksums-Sha256:
+ 7d30a8f56059901619c964162fdeff22bff494c95445ada00778db594a81f07e 2348 clamav_0.97.8+dfsg-1ubuntu1.13.04.1.dsc
+ 60791ea25ba732c3f38196846a18f1946064f168ff140f7fe888e5fc7a92b1f3 12923074 clamav_0.97.8+dfsg.orig.tar.gz
+ 7a155d67c8f761075c5ca9f9ad37e10f887f3c5f0a476da80765349294db910e 302083 clamav_0.97.8+dfsg-1ubuntu1.13.04.1.diff.gz
+
+Package: debootstrap
+Binary: debootstrap, debootstrap-udeb
+Version: 1.0.46ubuntu1
+Priority: extra
+Section: admin
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Build-Depends: debhelper (>= 7.0.50), makedev (>= 2.3.1-69) [linux-any]
+Architecture: all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/d/debootstrap
+Files:
+ f7abd02f6c41c1354a4754cce296e4a7 1177 debootstrap_1.0.46ubuntu1.dsc
+ a011a70abb006b99627f3ffd4f8a45e8 58020 debootstrap_1.0.46ubuntu1.tar.gz
+Uploaders: Joey Hess <joeyh@debian.org>, Junichi Uekawa <dancer@debian.org>, Colin Watson <cjwatson@debian.org>, Christian Perrier <bubulle@debian.org>
+Vcs-Browser: http://git.debian.org/?p=d-i/debootstrap.git
+Vcs-Git: git://git.debian.org/d-i/debootstrap.git
+Package-List: 
+ debootstrap deb admin extra
+ debootstrap-udeb udeb debian-installer extra
+Checksums-Sha1:
+ 58fad6c322a0afe647802eadf10de3b04af9608e 1177 debootstrap_1.0.46ubuntu1.dsc
+ c4800c686ddb05d84ff803bf2482f239f9195e83 58020 debootstrap_1.0.46ubuntu1.tar.gz
+Checksums-Sha256:
+ 0c40155d53e90f12a64f055cbdc1ef9bd10ff27dca915d62ddd8ae3a1a9c2bf6 1177 debootstrap_1.0.46ubuntu1.dsc
+ 6a7c0c2795d4b07ba45f3b4fa526a0efca10d9b088bcdba787ffd3263fd675d8 58020 debootstrap_1.0.46ubuntu1.tar.gz
+
+Package: distro-info-data
+Binary: distro-info-data
+Version: 0.13ubuntu0.1
+Priority: optional
+Section: devel
+Maintainer: Benjamin Drung <bdrung@debian.org>
+Build-Depends: debhelper (>= 9), python
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/main/d/distro-info-data
+Files:
+ f34639318ac5ba44d0ed98fd24dcd10b 1676 distro-info-data_0.13ubuntu0.1.dsc
+ 1f6d17b59407c31854add1ad112ecdd5 5776 distro-info-data_0.13ubuntu0.1.tar.gz
+Uploaders: Stefano Rivera <stefanor@debian.org>
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/distro-info-data.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/distro-info-data.git
+Package-List: 
+ distro-info-data deb devel optional
+Checksums-Sha1:
+ 167ea18f2250a8a9572b493258b75d066206fe6f 1676 distro-info-data_0.13ubuntu0.1.dsc
+ 4fa92a134478833f00a0c948a61bec66825c27f6 5776 distro-info-data_0.13ubuntu0.1.tar.gz
+Checksums-Sha256:
+ 8e4ae691964abd6a12180be0c981a9556fa1c08444457e378bff6da8aa7aed69 1676 distro-info-data_0.13ubuntu0.1.dsc
+ 23b7b489ed24f023e9107646487957af9544e4e84fc1ec8055f41bc1b344d104 5776 distro-info-data_0.13ubuntu0.1.tar.gz
+
+Package: lightdm
+Binary: lightdm, liblightdm-gobject-1-0, gir1.2-lightdm-1, liblightdm-qt-2-0, liblightdm-qt5-2-0, liblightdm-gobject-1-dev, liblightdm-qt-2-dev, liblightdm-qt5-2-dev, liblightdm-gobject-1-doc
+Version: 1.6.0-0ubuntu2.1
+Priority: optional
+Section: x11
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), gnome-common, intltool (>= 0.35.0), quilt, libgcrypt11-dev, libglib2.0-dev, libpam0g-dev, libxdmcp-dev, libxcb1-dev, libxklavier-dev, libgtk-3-dev, gobject-introspection, libgirepository1.0-dev, libqt4-dev, qtbase5-dev, dh-autoreconf, dh-translations, gtk-doc-tools, yelp-tools, dbus
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/l/lightdm
+Files:
+ 38facf6d35072c771b40e610d08d3abd 2601 lightdm_1.6.0-0ubuntu2.1.dsc
+ a729d991657c619109a89a5cf5421978 421048 lightdm_1.6.0.orig.tar.xz
+ 4608fb749bf779d9df80de98fb757018 51787 lightdm_1.6.0-0ubuntu2.1.debian.tar.gz
+Uploaders: Julien Lavergne <gilir@ubuntu.com>
+Homepage: https://launchpad.net/lightdm
+Package-List: 
+ gir1.2-lightdm-1 deb libs optional
+ liblightdm-gobject-1-0 deb x11 optional
+ liblightdm-gobject-1-dev deb libdevel optional
+ liblightdm-gobject-1-doc deb doc optional
+ liblightdm-qt-2-0 deb x11 optional
+ liblightdm-qt-2-dev deb libdevel optional
+ liblightdm-qt5-2-0 deb x11 optional
+ liblightdm-qt5-2-dev deb libdevel optional
+ lightdm deb x11 optional
+Checksums-Sha1:
+ 37b06fba3d9b44320f95917269e5329e4557b2ab 2601 lightdm_1.6.0-0ubuntu2.1.dsc
+ e28a1a94297e2f697e0720aedf192bbf2a8bf23a 421048 lightdm_1.6.0.orig.tar.xz
+ c864b54dbe6a3464e34957462af87607718edf71 51787 lightdm_1.6.0-0ubuntu2.1.debian.tar.gz
+Checksums-Sha256:
+ 55b40ff3f8f766360e4b2739cb09d47503baa1f0ef4400d4bac936a22424304d 2601 lightdm_1.6.0-0ubuntu2.1.dsc
+ 882ece568df0d81c0b6e399ff00b3f89eee6d50efc09ad1c52c61d8753efb419 421048 lightdm_1.6.0.orig.tar.xz
+ d41c35cbd618353139be8ea329a10577b45bfdde11f5ff0bff5cb4334ea8575c 51787 lightdm_1.6.0-0ubuntu2.1.debian.tar.gz
+Testsuite: autopkgtest
+
+Package: linux
+Binary: linux-source-3.8.0, linux-doc, linux-tools-common, linux-headers-3.8.0-19, linux-libc-dev, linux-tools-3.8.0-19, linux-image-3.8.0-19-generic, linux-image-extra-3.8.0-19-generic, linux-headers-3.8.0-19-generic, linux-image-3.8.0-19-generic-dbgsym, kernel-image-3.8.0-19-generic-di, nic-modules-3.8.0-19-generic-di, nic-shared-modules-3.8.0-19-generic-di, serial-modules-3.8.0-19-generic-di, ppp-modules-3.8.0-19-generic-di, pata-modules-3.8.0-19-generic-di, firewire-core-modules-3.8.0-19-generic-di, scsi-modules-3.8.0-19-generic-di, plip-modules-3.8.0-19-generic-di, floppy-modules-3.8.0-19-generic-di, fat-modules-3.8.0-19-generic-di, nfs-modules-3.8.0-19-generic-di, md-modules-3.8.0-19-generic-di, multipath-modules-3.8.0-19-generic-di, usb-modules-3.8.0-19-generic-di, pcmcia-storage-modules-3.8.0-19-generic-di, fb-modules-3.8.0-19-generic-di, input-modules-3.8.0-19-generic-di, mouse-modules-3.8.0-19-generic-di, irda-modules-3.8.0-19-generic-di,
+ parport-modules-3.8.0-19-generic-di, nic-pcmcia-modules-3.8.0-19-generic-di, pcmcia-modules-3.8.0-19-generic-di, nic-usb-modules-3.8.0-19-generic-di, sata-modules-3.8.0-19-generic-di, crypto-modules-3.8.0-19-generic-di, squashfs-modules-3.8.0-19-generic-di, speakup-modules-3.8.0-19-generic-di, virtio-modules-3.8.0-19-generic-di, fs-core-modules-3.8.0-19-generic-di, fs-secondary-modules-3.8.0-19-generic-di, storage-core-modules-3.8.0-19-generic-di, block-modules-3.8.0-19-generic-di, message-modules-3.8.0-19-generic-di, vlan-modules-3.8.0-19-generic-di,
+ ipmi-modules-3.8.0-19-generic-di
+Version: 3.8.0-19.30
+Priority: optional
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, openssl, libaudit-dev
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: all i386 amd64 armhf arm64 x32 powerpc
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux
+Files:
+ a2517c4d192662a358cd9ea27362b20f 6516 linux_3.8.0-19.30.dsc
+ 2cdbbbc11bcbda9fbdf58b63e39bc184 107018407 linux_3.8.0.orig.tar.gz
+ bb13f74535ba2160c8af3a663e4d1930 2704309 linux_3.8.0-19.30.diff.gz
+Vcs-Git: http://kernel.ubuntu.com/git-repos/ubuntu/ubuntu-raring.git
+Package-List: 
+ block-modules-3.8.0-19-generic-di udeb debian-installer standard
+ crypto-modules-3.8.0-19-generic-di udeb debian-installer extra
+ fat-modules-3.8.0-19-generic-di udeb debian-installer standard
+ fb-modules-3.8.0-19-generic-di udeb debian-installer standard
+ firewire-core-modules-3.8.0-19-generic-di udeb debian-installer standard
+ floppy-modules-3.8.0-19-generic-di udeb debian-installer standard
+ fs-core-modules-3.8.0-19-generic-di udeb debian-installer standard
+ fs-secondary-modules-3.8.0-19-generic-di udeb debian-installer standard
+ input-modules-3.8.0-19-generic-di udeb debian-installer standard
+ ipmi-modules-3.8.0-19-generic-di udeb debian-installer standard
+ irda-modules-3.8.0-19-generic-di udeb debian-installer standard
+ kernel-image-3.8.0-19-generic-di udeb debian-installer extra
+ linux-doc deb doc optional
+ linux-headers-3.8.0-19 deb devel optional
+ linux-headers-3.8.0-19-generic deb devel optional
+ linux-image-3.8.0-19-generic deb kernel optional
+ linux-image-3.8.0-19-generic-dbgsym deb devel optional
+ linux-image-extra-3.8.0-19-generic deb kernel optional
+ linux-libc-dev deb devel optional
+ linux-source-3.8.0 deb devel optional
+ linux-tools-3.8.0-19 deb devel optional
+ linux-tools-common deb kernel optional
+ md-modules-3.8.0-19-generic-di udeb debian-installer standard
+ message-modules-3.8.0-19-generic-di udeb debian-installer standard
+ mouse-modules-3.8.0-19-generic-di udeb debian-installer extra
+ multipath-modules-3.8.0-19-generic-di udeb debian-installer extra
+ nfs-modules-3.8.0-19-generic-di udeb debian-installer standard
+ nic-modules-3.8.0-19-generic-di udeb debian-installer standard
+ nic-pcmcia-modules-3.8.0-19-generic-di udeb debian-installer standard
+ nic-shared-modules-3.8.0-19-generic-di udeb debian-installer standard
+ nic-usb-modules-3.8.0-19-generic-di udeb debian-installer standard
+ parport-modules-3.8.0-19-generic-di udeb debian-installer standard
+ pata-modules-3.8.0-19-generic-di udeb debian-installer standard
+ pcmcia-modules-3.8.0-19-generic-di udeb debian-installer standard
+ pcmcia-storage-modules-3.8.0-19-generic-di udeb debian-installer standard
+ plip-modules-3.8.0-19-generic-di udeb debian-installer standard
+ ppp-modules-3.8.0-19-generic-di udeb debian-installer standard
+ sata-modules-3.8.0-19-generic-di udeb debian-installer standard
+ scsi-modules-3.8.0-19-generic-di udeb debian-installer standard
+ serial-modules-3.8.0-19-generic-di udeb debian-installer standard
+ speakup-modules-3.8.0-19-generic-di udeb debian-installer extra
+ squashfs-modules-3.8.0-19-generic-di udeb debian-installer extra
+ storage-core-modules-3.8.0-19-generic-di udeb debian-installer standard
+ usb-modules-3.8.0-19-generic-di udeb debian-installer standard
+ virtio-modules-3.8.0-19-generic-di udeb debian-installer standard
+ vlan-modules-3.8.0-19-generic-di udeb debian-installer extra
+Checksums-Sha1:
+ a63824ddaf7a5f9adcb995f518586e4fad83543b 6516 linux_3.8.0-19.30.dsc
+ 4d30533806ddfc9244d7e883d1298bbf2a5c9905 107018407 linux_3.8.0.orig.tar.gz
+ c48650406d3bc7fb8ce0a71aaf2cd737d83df0e7 2704309 linux_3.8.0-19.30.diff.gz
+Checksums-Sha256:
+ 6e93fceb5da0c5b5ad3c3dc57876e02918c075a711d3f9b5983c03960e2cdc91 6516 linux_3.8.0-19.30.dsc
+ 2148578d122c9efb130a073e0024687bfd17e35c7dea1d6fd140eecc06ab97be 107018407 linux_3.8.0.orig.tar.gz
+ 8a3f15d8943ed5813c82564ef302f6748e81d00ea1d9aced1ecb6ff510e77755 2704309 linux_3.8.0-19.30.diff.gz
+Testsuite: autopkgtest
+
+Package: linux-signed
+Binary: linux-signed-image-3.8.0-19-generic, kernel-signed-image-3.8.0-19-generic-di
+Version: 3.8.0-19.30
+Priority: optional
+Section: utils
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), lsb-release, python3, python3-apt, sbsigntool, linux-image-3.8.0-19-generic (>= 3.8.0-19.30)
+Architecture: linux-amd64
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/main/l/linux-signed
+Files:
+ 267dac2ba7b06e208a2cf1ae80295d7b 1713 linux-signed_3.8.0-19.30.dsc
+ 97d8848628e72dbe6f68a54ff1607da5 5383 linux-signed_3.8.0-19.30.tar.gz
+Package-List: 
+ kernel-signed-image-3.8.0-19-generic-di udeb debian-installer extra
+ linux-signed-image-3.8.0-19-generic deb utils optional
+Checksums-Sha1:
+ 95118423e87b920519141eec841f6d7f9a55355a 1713 linux-signed_3.8.0-19.30.dsc
+ 3bc23387fa3314a9b2088851bdf23c0d4dc377c1 5383 linux-signed_3.8.0-19.30.tar.gz
+Checksums-Sha256:
+ e427402014218c8f80bcf808ca3b18b1ed7c6457a8bacf33c1533f07ec1d692a 1713 linux-signed_3.8.0-19.30.dsc
+ 36be76cf4f546fa564d0d88233e607b66b4b40e18de2922487e5b2f70baec6c0 5383 linux-signed_3.8.0-19.30.tar.gz
+
+Package: mysql-5.5
+Binary: libmysqlclient18, libmysqld-pic, libmysqld-dev, libmysqlclient-dev, mysql-common, mysql-client-core-5.5, mysql-client-5.5, mysql-server-core-5.5, mysql-server-5.5, mysql-server, mysql-client, mysql-testsuite, mysql-testsuite-5.5, mysql-source-5.5
+Version: 5.5.31-0ubuntu0.13.04.1
+Priority: optional
+Section: database
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Build-Depends: libtool (>= 1.4.2-7), procps | hurd, debhelper (>= 8.1.3~), file (>= 3.28), libncurses5-dev (>= 5.0-6), perl (>= 5.6.0), libwrap0-dev (>= 7.6-8.3), zlib1g-dev (>= 1:1.1.3-5), libreadline-dev, psmisc, po-debconf, chrpath, doxygen-latex, ghostscript, gawk, bison, lsb-release, hardening-wrapper, cmake, dh-apparmor, gcc-4.4 [any-i386], g++-4.4 [any-i386], libaio-dev [linux-any]
+Architecture: any all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/m/mysql-5.5
+Files:
+ 0023403fa1bfa31937a019e6b1a21007 2776 mysql-5.5_5.5.31-0ubuntu0.13.04.1.dsc
+ 48c430d798ee072213b1e35ff59d24d1 21632926 mysql-5.5_5.5.31.orig.tar.gz
+ c8e6602069fd5ff4861a7a432d809bd7 301781 mysql-5.5_5.5.31-0ubuntu0.13.04.1.debian.tar.gz
+Uploaders: Norbert Tretkowski <norbert@tretkowski.de>, Clint Byrum <clint@ubuntu.com>
+Homepage: http://dev.mysql.com/
+Package-List: 
+ libmysqlclient-dev deb libdevel optional
+ libmysqlclient18 deb libs optional
+ libmysqld-dev deb libdevel optional
+ libmysqld-pic deb libdevel optional
+ mysql-client deb database optional
+ mysql-client-5.5 deb database optional
+ mysql-client-core-5.5 deb database optional
+ mysql-common deb database optional
+ mysql-server deb database optional
+ mysql-server-5.5 deb database optional
+ mysql-server-core-5.5 deb database optional
+ mysql-source-5.5 deb database optional
+ mysql-testsuite deb database optional
+ mysql-testsuite-5.5 deb database optional
+Checksums-Sha1:
+ 25ae52905e98fcef834c1cf2de655f6b121b13d0 2776 mysql-5.5_5.5.31-0ubuntu0.13.04.1.dsc
+ af4ddcd3eee1b05091378d4bdadd5c23044507df 21632926 mysql-5.5_5.5.31.orig.tar.gz
+ 9b990289f51e37a3008d2f18a64e51ca8a567aa0 301781 mysql-5.5_5.5.31-0ubuntu0.13.04.1.debian.tar.gz
+Checksums-Sha256:
+ 141949aac36ddb0339a01e62491532efd7024dfd1d14fa15a246b231c5257468 2776 mysql-5.5_5.5.31-0ubuntu0.13.04.1.dsc
+ f4c292072557a1c530c3e45d841cbf8065aa7f50944045bdf6c3345aa3690005 21632926 mysql-5.5_5.5.31.orig.tar.gz
+ bf78957da6f6e6865a6103074bea067bbbe5104a33274a3ed99feae6cfca63e8 301781 mysql-5.5_5.5.31-0ubuntu0.13.04.1.debian.tar.gz
+Testsuite: autopkgtest
+
+Package: plymouth
+Binary: plymouth, plymouth-x11, plymouth-label, libplymouth2, libplymouth-dev, plymouth-theme-fade-in, plymouth-theme-glow, plymouth-theme-script, plymouth-theme-solar, plymouth-theme-spinfinity, plymouth-theme-ubuntu-logo, plymouth-theme-text, plymouth-theme-ubuntu-text
+Version: 0.8.8-0ubuntu6.1
+Priority: required
+Section: x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), dh-exec (>= 0.3), libpng12-dev, libcairo2-dev, libgtk2.0-dev, libpango1.0-dev, autotools-dev, libdrm-dev, libdbus-1-dev, libncursesw5-dev, dpkg-dev (>= 1.16.0~ubuntu4)
+Architecture: any
+Standards-Version: 3.8.3.0
+Format: 3.0 (quilt)
+Directory: pool/main/p/plymouth
+Files:
+ 9e3917ef089b8f90afa2f8b9561e87dd 2647 plymouth_0.8.8-0ubuntu6.1.dsc
+ 38f5e613e5ab17806b950cee2d0d0d4e 1143549 plymouth_0.8.8.orig.tar.bz2
+ da0e71f98ba69c896e2bbdfad47802ae 109358 plymouth_0.8.8-0ubuntu6.1.debian.tar.gz
+Vcs-Bzr: lp:ubuntu/plymouth
+Package-List: 
+ libplymouth-dev deb libdevel optional
+ libplymouth2 deb libs optional
+ plymouth deb x11 optional
+ plymouth-label deb x11 optional
+ plymouth-theme-fade-in deb x11 optional
+ plymouth-theme-glow deb x11 optional
+ plymouth-theme-script deb x11 optional
+ plymouth-theme-solar deb x11 optional
+ plymouth-theme-spinfinity deb x11 optional
+ plymouth-theme-text deb x11 optional
+ plymouth-theme-ubuntu-logo deb x11 optional
+ plymouth-theme-ubuntu-text deb x11 optional
+ plymouth-x11 deb x11 optional
+Checksums-Sha1:
+ 72d6ea97b6ccf411e76acc9efb6788defb5db74d 2647 plymouth_0.8.8-0ubuntu6.1.dsc
+ 7b009c41074514dcb304d78f45a030e909907e3e 1143549 plymouth_0.8.8.orig.tar.bz2
+ 9a58e199371051721d6475449d909e340df23967 109358 plymouth_0.8.8-0ubuntu6.1.debian.tar.gz
+Checksums-Sha256:
+ f7afda64b91025fccfadeafcaae84ca9415cdb81c5fe0ffa2323b9f6504d746c 2647 plymouth_0.8.8-0ubuntu6.1.dsc
+ 1bada4e1d3a31a5a99adc2db83f5452d9818839cda51a6e430f044f6281d759b 1143549 plymouth_0.8.8.orig.tar.bz2
+ d751ed06039d79ae09245a2b4472d30df5f1e365073a56ad0cbccb448c69b1f9 109358 plymouth_0.8.8-0ubuntu6.1.debian.tar.gz
+
+Package: ubiquity
+Binary: ubiquity, ubiquity-ubuntu-artwork, ubiquity-frontend-gtk, ubiquity-frontend-kde, ubiquity-frontend-debconf, oem-config, oem-config-gtk, oem-config-kde, oem-config-debconf, oem-config-check, oem-config-udeb, oem-config-remaster
+Version: 2.14.8
+Priority: optional
+Section: admin
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Build-Depends: apt, autopoint, bf-utf-source, dctrl-tools, debconf (>= 1.5.43), debconf-utils, debhelper (>= 9), devio, dh-autoreconf, dh-di (>= 3), dpkg-dev (>= 1.15.7), gir1.2-soup-2.4, gir1.2-timezonemap-1.0, gir1.2-xkl-1.0, gnome-icon-theme, gobject-introspection, intltool (>= 0.40.0), intltool-debian (>= 0.30+20040212), iso-codes, isoquery, keymapper (>= 0.5.3-7), libbogl-dev, libcairo2-dev, libdebconfclient0-dev (>= 0.68), libdebian-installer4-dev (>= 0.76), libgirepository1.0-dev, libglib2.0-dev, libgtk-3-dev, libindicator3-dev, libiw-dev (>= 27+28pre9), liblocale-gettext-perl, libparted-dev, libparted0-dev (>= 2.2), locales, pep8, pkg-config, po-debconf (>= 1.0), pyflakes, python-gi-dev, python-scour, python3-all (>= 3.1), python3-apt (>= 0.7.100.3~), python3-cairo, python3-dbus, python3-gi, python3-gi-cairo, python3-mock (>= 0.7.0), python3-pyicu (>= 1.0), tzdata, ubuntu-artwork, udev, wget, xkb-data (>= 0.9), xkb-data-i18n, xvfb
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/main/u/ubiquity
+Files:
+ 433914bb80af0f2752bec4f7c9011d60 3244 ubiquity_2.14.8.dsc
+ 31d33d5a5f124927e58f73450197686b 6386852 ubiquity_2.14.8.tar.xz
+Uploaders: Colin Watson <cjwatson@ubuntu.com>, Evan Dandrea <ev@ubuntu.com>
+Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-installer/ubiquity/trunk
+Package-List: 
+ oem-config deb admin optional
+ oem-config-check udeb debian-installer standard
+ oem-config-debconf deb admin optional
+ oem-config-gtk deb admin optional
+ oem-config-kde deb admin optional
+ oem-config-remaster deb admin optional
+ oem-config-udeb udeb debian-installer optional
+ ubiquity deb admin optional
+ ubiquity-frontend-debconf deb admin optional
+ ubiquity-frontend-gtk deb admin optional
+ ubiquity-frontend-kde deb admin optional
+ ubiquity-ubuntu-artwork deb admin optional
+Checksums-Sha1:
+ 28bf79f4a8a32cfb252ab2d99c627380b87d199f 3244 ubiquity_2.14.8.dsc
+ dd8d46c65f36600b11aa7886fc3ce8a4205ae396 6386852 ubiquity_2.14.8.tar.xz
+Checksums-Sha256:
+ 352128ddd15aaf5fc208b2d036e97ba1e3f87d6557c09991dc087f4ebe8f7d07 3244 ubiquity_2.14.8.dsc
+ b4bdcecdb3e0878e8152a5e1319601adef71acc2a826cc0b2fe0933cdac94ca2 6386852 ubiquity_2.14.8.tar.xz
+Testsuite: autopkgtest
+
+Package: xdiagnose
+Binary: xdiagnose
+Version: 3.5.1
+Priority: optional
+Section: python
+Maintainer: Bryce Harrington <bryce@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), dh-translations, python3 (>= 3.2), python3-all, intltool, apport, python-distutils-extra (>= 2.32-2), python3-distutils-extra (>= 2.32-2)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 1.0
+Directory: pool/main/x/xdiagnose
+Files:
+ e31400d14fa44d043d3f0b4bb88fba2c 931 xdiagnose_3.5.1.dsc
+ ce5a530e4a708b263a95c7a62f060d08 114802 xdiagnose_3.5.1.tar.gz
+Homepage: http://wiki.ubuntu.com/X
+Package-List: 
+ xdiagnose deb python extra
+Checksums-Sha1:
+ e0d6eb0259834174a8a9875768e32d5fce295730 931 xdiagnose_3.5.1.dsc
+ 3ff11aadce92ff6ead48a6e36c18eecac4ef7034 114802 xdiagnose_3.5.1.tar.gz
+Checksums-Sha256:
+ dd69932f6b6363a1ed9b9a4894790b4c028c5fdad9938448f5e27419179d133a 931 xdiagnose_3.5.1.dsc
+ 4c8fb8e95181b9abe58e1ce9362ddb845b5b24b44b093ad2684516684465086b 114802 xdiagnose_3.5.1.tar.gz
+
+Package: xen
+Binary: xen-docs-4.2, libxen-4.2, libxenstore3.0, libxen-dev, xenstore-utils, libxen-ocaml, libxen-ocaml-dev, xen-utils-common, xen-utils-4.2, xen-hypervisor-4.2-amd64, xen-system-amd64, xen-hypervisor-4.2-i386, xen-system-i386
+Version: 4.2.1-0ubuntu3.1
+Priority: optional
+Section: kernel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>> 7), dpkg-dev (>= 1.16.0~), lsb-release, python-dev, bcc, gcc-multilib, e2fslibs-dev, iasl, kvm-ipxe, libaio-dev, libglib2.0-dev, libgnutls-dev, liblzma-dev, libncurses5-dev, libpci-dev, libyajl-dev, pkg-config, uuid-dev, zlib1g-dev, ocaml-nox, dh-ocaml, ocaml-findlib, libssl-dev
+Build-Depends-Indep: graphviz, ghostscript, texlive-fonts-recommended, texlive-font-utils, texlive-latex-recommended
+Architecture: all amd64 i386
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/x/xen
+Files:
+ e760fbbd0411dd9865fa63bd8a3b1bad 3181 xen_4.2.1-0ubuntu3.1.dsc
+ a1f3e9be9b31f199a72d66d14fbe8c14 3806848 xen_4.2.1.orig-qemu.tar.gz
+ 72cc776393207dc09c9b6fff0af7427b 5852909 xen_4.2.1.orig.tar.gz
+ 441d3062c3acaaf7872dee07198270a8 88526 xen_4.2.1-0ubuntu3.1.debian.tar.gz
+Uploaders: Guido Trotter <ultrotter@debian.org>, Bastian Blank <waldi@debian.org>
+Package-List: 
+ libxen-4.2 deb libs optional
+ libxen-dev deb libdevel optional
+ libxen-ocaml deb ocaml optional
+ libxen-ocaml-dev deb ocaml optional
+ libxenstore3.0 deb libs optional
+ xen-docs-4.2 deb doc optional
+ xen-hypervisor-4.2-amd64 deb kernel optional
+ xen-hypervisor-4.2-i386 deb kernel optional
+ xen-system-amd64 deb kernel optional
+ xen-system-i386 deb kernel optional
+ xen-utils-4.2 deb kernel optional
+ xen-utils-common deb kernel optional
+ xenstore-utils deb admin optional
+Checksums-Sha1:
+ 9018e88a68563c297bc243c9cd71f1ca69cabd0b 3181 xen_4.2.1-0ubuntu3.1.dsc
+ b827852e2ed7ecd2711614eb0fef441d05aea51c 3806848 xen_4.2.1.orig-qemu.tar.gz
+ 32e4f155ff9c7dec39bf8d13ce7c04b822cc330c 5852909 xen_4.2.1.orig.tar.gz
+ fa91c883c5a1dd4c5f5bd6f89b70afe444766124 88526 xen_4.2.1-0ubuntu3.1.debian.tar.gz
+Checksums-Sha256:
+ f8205ffe5b36eac33eccffdae1ca4f7fce227775d07e068083aa563d799ea657 3181 xen_4.2.1-0ubuntu3.1.dsc
+ f680f36162423ad7fd5fd09f10bce07c04a38afec40980625585014da9f443dd 3806848 xen_4.2.1.orig-qemu.tar.gz
+ 3f524c81f184c04efcfd13259d1f02b0f3a959de56832ed0c3ef76f8fb96a278 5852909 xen_4.2.1.orig.tar.gz
+ dfd7d788458eac8ae940adc3e52db61a50b32f206f728200a3c22713ef7876c5 88526 xen_4.2.1-0ubuntu3.1.debian.tar.gz
+Python-Version: current
+

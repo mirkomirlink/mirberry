@@ -1,0 +1,664 @@
+Package: casper
+Description-md5: 9be0120948307c7e897a16c45a69ba0f
+Description-en: Run a "live" preinstalled system from read-only media
+
+Package: clamav
+Description-md5: 25816a2f56a0c214a484e117fd9fe0b1
+Description-en: anti-virus utility for Unix - command-line interface
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the command line interface. Features:
+  - built-in support for various archive formats, including Zip, Tar,
+    Gzip, Bzip2, OLE2, Cabinet, CHM, BinHex, SIS and others;
+  - built-in support for almost all mail file formats;
+  - built-in support for ELF executables and Portable Executable files
+    compressed with UPX, FSG, Petite, NsPack, wwpack32, MEW, Upack and
+    obfuscated with SUE, Y0da Cryptor and others;
+  - built-in support for popular document formats including Microsoft
+    Office and Mac Office files, HTML, RTF and PDF.
+ .
+ For scanning to work, a virus database is needed. There are two options
+ for getting it:
+  - clamav-freshclam: updates the database from Internet. This is
+    recommended with Internet access.
+  - clamav-data: for users without Internet access. The package is
+    not updated once installed. The clamav-getfiles package allows
+    creating custom packages from an Internet-connected computer.
+
+Package: clamav-base
+Description-md5: 36333c8001fa330971bb9bf732bd846d
+Description-en: anti-virus utility for Unix - base package
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package mainly manages the clamav system account. It is not really
+ useful without the clamav package. It also handles the configuration
+ for both the clamav-daemon and the clamav-milter packages.
+
+Package: clamav-daemon
+Description-md5: 67066a5cf6ee89fc8ce3ae691827a9ad
+Description-en: anti-virus utility for Unix - scanner daemon
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the daemon and its command line interface,
+ featuring:
+  - fast, multi-threaded daemon;
+  - easy integration with MTA's;
+  - support for on-access scanning;
+  - remote scanning;
+  - able to be run supervised by daemon.
+
+Package: clamav-dbg
+Description-md5: 33a33cc71dce345b4a0ce175ebeca8c7
+Description-en: debug symbols for ClamAV
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the stripped debugging symbols for the ClamAV suite.
+
+Package: clamav-docs
+Description-md5: e2412f6e57d4fb282e22d549e939cb72
+Description-en: anti-virus utility for Unix - documentation
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the documentation for the ClamAV suite.
+
+Package: clamav-freshclam
+Description-md5: 824a85afc618e1467a907719e4edd7bb
+Description-en: anti-virus utility for Unix - virus database update utility
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the freshclam program and scripts to automate virus
+ database updating. It relies on an Internet connection, but can be
+ run in a variety of ways to compensate for intermittent connections.
+
+Package: debootstrap
+Description-md5: 883a8efb3ed16248b0d2091d9c0b60c9
+Description-en: Bootstrap a basic Debian system
+ debootstrap is used to create a Debian base system from scratch,
+ without requiring the availability of dpkg or apt. It does this by
+ downloading .deb files from a mirror site, and carefully unpacking them
+ into a directory which can eventually be chrooted into.
+
+Package: distro-info-data
+Description-md5: f7fe06a2e0396bbe8c1c7abad056bf48
+Description-en: information about the distributions' releases (data files)
+ Information about all releases of Debian and Ubuntu. The distro-info script
+ will give you the codename for e.g. the latest stable release of your
+ distribution. To get information about a specific distribution there are the
+ debian-distro-info and the ubuntu-distro-info scripts.
+ .
+ This package contains the data files.
+
+Package: gir1.2-lightdm-1
+Description-md5: 15edc3a87b41d0dccba5699c5b28aa73
+Description-en: Typelib file for liblightdm-1
+ A GObject based library for LightDM clients to use to interface with LightDM.
+
+Package: libclamav-dev
+Description-md5: f9403f3147d4d160269156db01264656
+Description-en: anti-virus utility for Unix - development files
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ The package contains the needed headers and libraries for
+ developing software using the libclamav interface.
+ .
+ This library can be used to develop virus scanner applications.
+
+Package: libclamav6
+Description-md5: 8eec48379ead2492f2f06feeb97a6a2f
+Description-en: anti-virus utility for Unix - library
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ For programs written using the libclamav library. Libclamav may be used to add
+ virus protection into software. The library is thread-safe, and automatically
+ recognizes and scans archives. Scanning is very fast and most of the time
+ not noticeable.
+
+Package: liblightdm-gobject-1-0
+Description-md5: 6c3bad2fb3c13c192ee2080b06f2b9b2
+Description-en: LightDM GObject client library
+ A GObject based library for LightDM clients to use to interface with LightDM.
+
+Package: liblightdm-gobject-1-dev
+Description-md5: 7b47429d527a03b25da17dce04d74b8e
+Description-en: LightDM GObject client library (development files)
+ A GObject based library for LightDM clients to use to interface with LightDM.
+ .
+ This package contains header files and development information, which
+ is useful for building LightDM greeters and user switchers.
+
+Package: liblightdm-gobject-1-doc
+Description-md5: ed7ca117d51a427f54238d598a2c843e
+Description-en: LightDM client library (documentation)
+ A GObject based library for LightDM clients to use to interface with LightDM.
+ .
+ This package contains HTML documentation.
+
+Package: liblightdm-qt-2-0
+Description-md5: e4829922d725966a3547148f5055fe94
+Description-en: LightDM Qt client library
+ A Qt based library for LightDM clients to use to interface with LightDM.
+
+Package: liblightdm-qt-2-dev
+Description-md5: ff0d940b50715c82bbf4f79a43e4beb8
+Description-en: LightDM Qt client library (development files)
+ A Qt based library for LightDM clients to use to interface with LightDM.
+ .
+ This package contains header files and development information, which
+ is useful for building LightDM greeters and user switchers.
+
+Package: liblightdm-qt5-2-0
+Description-md5: 14bad12e84d0c8c995dabc65095c9b02
+Description-en: LightDM Qt 5 client library
+ A Qt 5 based library for LightDM clients to use to interface with LightDM.
+
+Package: liblightdm-qt5-2-dev
+Description-md5: befe4f3f090b62ea12a3d96e66eeecbd
+Description-en: LightDM Qt 5 client library (development files)
+ A Qt 5 based library for LightDM clients to use to interface with LightDM.
+ .
+ This package contains header files and development information, which
+ is useful for building LightDM greeters and user switchers.
+
+Package: libmysqlclient-dev
+Description-md5: 716f7a81dc4e3e8899c7eaa66b24736d
+Description-en: MySQL database development files
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes development libraries and header files.
+
+Package: libmysqlclient18
+Description-md5: 49de807663510f5f2afd3e71efe199f1
+Description-en: MySQL database client library
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client library.
+
+Package: libmysqld-dev
+Description-md5: 2f06b7e1bfdb9f620d92f9696d24fabc
+Description-en: MySQL embedded database development files
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the embedded server library and header files.
+
+Package: libplymouth-dev
+Description-md5: 2788897f3e5c5b2f91c898358099697e
+Description-en: graphical boot animation and logger - development files
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the development files to build Plymouth plugins.
+
+Package: libplymouth2
+Description-md5: 29e2ed45f3e127c38b58dae52061cc33
+Description-en: graphical boot animation and logger - shared libraries
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the shared libraries.
+
+Package: libxen-4.2
+Description-md5: cd7ad869e7a3a001fd3c7b337111e06f
+Description-en: Public libs for Xen
+ This package contains the shared libraries for Xen.
+
+Package: libxen-dev
+Description-md5: 16aef021d38a9f4fed58c122c9b3e1cf
+Description-en: Public headers and libs for Xen
+ This package contains the public headers and static libraries for Xen.
+
+Package: libxen-ocaml
+Description-md5: c9c37edde6c8bfae0ec1ac70e828dbac
+Description-en: OCaml libraries for controlling Xen
+ This package contains the runtime libraries required for the ocaml
+ bindings to the Xen control libraries.
+
+Package: libxen-ocaml-dev
+Description-md5: 9c87ca7440bf9a1fcef15be5c5ae0a2d
+Description-en: OCaml libraries for controlling Xen (devel package)
+ This package contains the ocaml findlib packages for compiling
+ applications that are designed to control the Xen hypervisor.
+
+Package: libxenstore3.0
+Description-md5: c2462dfd8088a311ca74072df39a0705
+Description-en: Xenstore communications library for Xen
+ This package contains the public libxenstore.
+
+Package: lightdm
+Description-md5: a04ec89b09d7becf8ba288295841fad0
+Description-en: Display Manager
+ LightDM is a X display manager that:
+  * Has a lightweight codebase
+  * Is standards compliant (PAM, ConsoleKit, etc)
+  * Has a well defined interface between the server and user interface
+  * Cross-desktop (greeters can be written in any toolkit)
+
+Package: linux-doc
+Description-md5: ce791e5696c1c1aa38d33d35dcd5430d
+Description-en: Linux kernel specific documentation for version 3.8.0
+ This package provides the various documents in the 3.8.0 kernel
+ Documentation/ subdirectory.  These document kernel subsystems, APIs, device
+ drivers, and so on.  See
+ /usr/share/doc/linux-doc/00-INDEX for a list of what is
+ contained in each file.
+
+Package: linux-headers-3.8.0-19
+Description-md5: 326090d8b0e03a9dc9422c2bcc30ca76
+Description-en: Header files related to Linux kernel version 3.8.0
+ This package provides kernel header files for version 3.8.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-headers-3.8.0-19/debian.README.gz for details
+
+Package: linux-headers-3.8.0-19-generic
+Description-md5: a30bb2e0322772add642fdbce010e94f
+Description-en: Linux kernel headers for version 3.8.0 on 64 bit x86 SMP
+ This package provides kernel header files for version 3.8.0 on
+ 64 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-3.8.0-19/debian.README.gz for details.
+
+Package: linux-image-3.8.0-19-generic
+Description-md5: 8fdb63eed7d5ffa69b80014b40501775
+Description-en: Linux kernel image for version 3.8.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.8.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-extra-3.8.0-19-generic
+Description-md5: 8fdb63eed7d5ffa69b80014b40501775
+Description-en: Linux kernel image for version 3.8.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.8.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-libc-dev
+Description-md5: d5d143e6dffc891f04a85464446f9451
+Description-en: Linux Kernel Headers for development
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+
+Package: linux-signed-image-3.8.0-19-generic
+Description-md5: 58606405946683c4d2ca4f105784fd91
+Description-en: Signed kernel image generic
+ A kernel image for generic.  This version of it is signed with
+ Canonical's UEFI signing key.
+
+Package: linux-source-3.8.0
+Description-md5: 2cc47389e6a08869c43cb079a77067d0
+Description-en: Linux kernel source for version 3.8.0 with Ubuntu patches
+ This package provides the source code for the Linux kernel version
+ 3.8.0.
+ .
+ This package is mainly meant for other packages to use, in order to build
+ custom flavours.
+ .
+ If you wish to use this package to create a custom Linux kernel, then it
+ is suggested that you investigate the package kernel-package, which has
+ been designed to ease the task of creating kernel image packages.
+ .
+ If you are simply trying to build third-party modules for your kernel,
+ you do not want this package. Install the appropriate linux-headers
+ package instead.
+
+Package: linux-tools-3.8.0-19
+Description-md5: 9c4d8916a7502c27db86951ae7a8e447
+Description-en: Linux kernel version specific tools for version 3.8.0-19
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 3.8.0-19 on
+ 64 bit x86.
+
+Package: linux-tools-common
+Description-md5: 82cdbfd960c61ce6ed3a2bc1966d589d
+Description-en: Linux kernel version specific tools for version 3.8.0
+ This package provides the architecture independent parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version PGKVER.
+
+Package: mysql-client
+Description-md5: c1035c33de63147bb387637ae5083656
+Description-en: MySQL database client (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mysql-client (currently mysql-client-5.5), as determined by the MySQL
+ maintainers.  Install this package if in doubt about which MySQL version
+ you want, as this is the one we consider to be in the best shape.
+
+Package: mysql-client-5.5
+Description-md5: 70aef1a292fc318f9af72aa188c17716
+Description-en: MySQL database client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client binaries and the additional tools
+ innotop and mysqlreport.
+
+Package: mysql-client-core-5.5
+Description-md5: 94a7aede8ba9259b1382d4dfca4cdde0
+Description-en: MySQL database core client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the core client files, as used by Akonadi.
+
+Package: mysql-common
+Description-md5: 562d254c602f89e4390e28f6362283c8
+Description-en: MySQL database common files, e.g. /etc/mysql/my.cnf
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes files needed by all versions of the client library,
+ e.g. /etc/mysql/my.cnf.
+
+Package: mysql-server
+Description-md5: e519a9c4f87658afbd1d077af63f9269
+Description-en: MySQL database server (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mysql-server (currently mysql-server-5.5), as determined by the MySQL
+ maintainers. Install this package if in doubt about which MySQL
+ version you need. That will install the version recommended by the
+ package maintainers.
+ .
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+
+Package: mysql-server-5.5
+Description-md5: 3ae11e16f793b3ee84f73a5fa268ad9b
+Description-en: MySQL database server binaries and system database setup
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package contains all the infrastructure needed to setup system
+ databases.
+
+Package: mysql-server-core-5.5
+Description-md5: a54aa75db64667c487b6c9d3800b8153
+Description-en: MySQL database server binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the server binaries but doesn't contain all the
+ infrastructure needed to setup system databases.
+
+Package: oem-config
+Description-md5: 9380d07ec19991f384138c016b142ce0
+Description-en: Perform end-user configuration after initial OEM installation
+ The oem-config script re-asks a number of questions that are normally asked
+ during installation, and reconfigures the system accordingly. This allows a
+ vendor to install a skeleton system, clone it onto a large number of
+ machines, and ship it to end users, while still allowing end users to set
+ up their own username and password, language, timezone, and so on.
+
+Package: oem-config-debconf
+Description-md5: 0b339016cd37fb3df25a4085c60673e9
+Description-en: debconf frontend for end-user post-OEM-install configuration
+ The oem-config script re-asks a number of questions that are normally asked
+ during installation, and reconfigures the system accordingly. This allows a
+ vendor to install a skeleton system, clone it onto a large number of
+ machines, and ship it to end users, while still allowing end users to set
+ up their own username and password, language, timezone, and so on.
+ .
+ This is a frontend to oem-config that simply arranges for questions to be
+ asked using the normal debconf frontend.
+
+Package: oem-config-gtk
+Description-md5: 8709c78036a09529b74b507a6299fd60
+Description-en: GTK+ frontend for end-user post-OEM-install configuration
+ The oem-config script re-asks a number of questions that are normally asked
+ during installation, and reconfigures the system accordingly. This allows a
+ vendor to install a skeleton system, clone it onto a large number of
+ machines, and ship it to end users, while still allowing end users to set
+ up their own username and password, language, timezone, and so on.
+ .
+ This is a GTK+ frontend to oem-config.
+
+Package: plymouth
+Description-md5: 36dd6c0b2d2e2968eb795981d2b48521
+Description-en: graphical boot animation and logger - main package
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+
+Package: plymouth-label
+Description-md5: 5811f727790d0292c01a69a6fb2044fe
+Description-en: graphical boot animation and logger - label control
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the label control, used by various graphical themes
+ to render text.
+
+Package: plymouth-theme-ubuntu-logo
+Description-md5: 8d874d448c1e27d2eef5a053231911ed
+Description-en: graphical boot animation and logger - ubuntu-logo theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default ubuntu-logo theme.
+
+Package: plymouth-theme-ubuntu-text
+Description-md5: e64a5fbd685fee7e5864ea3986a54164
+Description-en: graphical boot animation and logger - ubuntu-logo theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default ubuntu-text text theme used when no
+ support for a graphical theme is found on your system.
+
+Package: ubiquity
+Description-md5: a02e939502ca1f257871281bbc51e7e1
+Description-en: Ubuntu live CD installer
+ This is a simple live CD installer designed to integrate well with Debian-
+ and Ubuntu-based systems, and to reuse code from d-i for ease of
+ maintenance.
+ .
+ Installing this package on a normal system is unlikely to be useful.
+
+Package: ubiquity-casper
+Description-md5: c8d716f3fb782cd7e002d2b9dba298b2
+Description-en: Configuration hooks for live installer
+ This package provides hook scripts for the Ubiquity live installer that
+ repeat some pieces of configuration done by the live system boot process in
+ the system installed by Ubiquity.
+
+Package: ubiquity-frontend-debconf
+Description-md5: fa1dbae8b89fc2e16547475097735858
+Description-en: debconf frontend for the Ubiquity live installer
+ This package provides a debconf-based user interface frontend for the
+ Ubiquity live CD installer.
+
+Package: ubiquity-frontend-gtk
+Description-md5: 44de7bf97742fb6f9f2aaa099078ef33
+Description-en: GTK+ frontend for Ubiquity live installer
+ This package provides a GTK+-based user interface frontend for the Ubiquity
+ live CD installer.
+
+Package: ubiquity-ubuntu-artwork
+Description-md5: a7bbb2b9a8b2a3fbc7110f5a8d336a36
+Description-en: Ubuntu artwork for Ubiquity live installer
+ This package provides Ubuntu-themed user interface artwork, help files, and
+ user interface text for the Ubiquity live CD installer.
+
+Package: xdiagnose
+Description-md5: ceca96828e411b7ecc73f81dd97854fb
+Description-en: X.org diagnosis tool
+ This package is a friendly GUI application for diagnosing several
+ common X.org problems on Ubuntu.
+
+Package: linux-headers-3.8.0-19-generic
+Description-md5: 76ed110a97bfc6092348e9db24276217
+Description-en: Linux kernel headers for version 3.8.0 on ARM (hard float) SMP
+ This package provides kernel header files for version 3.8.0 on
+ ARM (hard float) SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-3.8.0-19/debian.README.gz for details.
+
+Package: linux-image-3.8.0-19-generic
+Description-md5: df6127a9974ef3eb3f02fe9c3d5449ad
+Description-en: Linux kernel image for version 3.8.0 on ARM (hard float) SMP
+ This package contains the Linux kernel image for version 3.8.0 on
+ ARM (hard float) SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-headers-3.8.0-19-generic
+Description-md5: 4628ac57fa4e105bc361e449287d7b61
+Description-en: Linux kernel headers for version 3.8.0 on 32 bit x86 SMP
+ This package provides kernel header files for version 3.8.0 on
+ 32 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-3.8.0-19/debian.README.gz for details.
+
+Package: linux-image-3.8.0-19-generic
+Description-md5: d7891e7bf108bf056e7f29fce10ead08
+Description-en: Linux kernel image for version 3.8.0 on 32 bit x86 SMP
+ This package contains the Linux kernel image for version 3.8.0 on
+ 32 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-extra-3.8.0-19-generic
+Description-md5: d7891e7bf108bf056e7f29fce10ead08
+Description-en: Linux kernel image for version 3.8.0 on 32 bit x86 SMP
+ This package contains the Linux kernel image for version 3.8.0 on
+ 32 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-tools-3.8.0-19
+Description-md5: 9e08aaf096bce8a826da5a910c42f13d
+Description-en: Linux kernel version specific tools for version 3.8.0-19
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 3.8.0-19 on
+ 32 bit x86.
+

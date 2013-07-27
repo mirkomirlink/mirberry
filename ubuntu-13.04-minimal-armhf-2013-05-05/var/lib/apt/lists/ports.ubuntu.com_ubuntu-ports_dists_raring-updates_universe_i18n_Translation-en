@@ -1,0 +1,309 @@
+Package: clamav-milter
+Description-md5: bdf4d5012233691e2d3d904e79a57dcf
+Description-en: anti-virus utility for Unix - sendmail integration
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the ClamAV milter for use with sendmail. It can
+ be configured to be run either standalone, or using clamav-daemon.
+
+Package: clamav-testfiles
+Description-md5: 02a1eb16b2a0a9f53fc09fe0d784518c
+Description-en: anti-virus utility for Unix - test files
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains files 'infected' with a test signature. The test
+ signature (ClamAV-Test-Signature) should be detectable by all
+ anti-virus programs.
+
+Package: libmuonprivate1
+Description-md5: c0a1b42a6c8a1d6ac2363a6d3a141aa3
+Description-en: Runtime files for the Muon package management suite
+ The Muon package management suite is a collection of package management
+ applications built on the KDE platform.
+ .
+ This package contains runtime libraries
+
+Package: libmysqld-pic
+Description-md5: a6e7a6d26021d6ef468e70ec4ac81167
+Description-en: MySQL database development files
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the -fPIC version of the embedded server library.
+
+Package: muon
+Description-md5: d0764060b8494cbe357e5b35a8a849b8
+Description-en: package manager for KDE
+ Muon is a graphical package manager for KDE.
+ .
+ Features of note include:
+  * A powerful, yet intuitive interface
+  * Fast, accurate package search using the apt-xapian index and the Synaptic
+    search algorithm
+  * Support for filtering packages by status and category
+  * Media change support
+  * Support for configuring packages through the debconf system
+  * Warn about/disallow the installation of untrusted packages, depending on
+    APT settings
+  * Uses Polkit for running privileged actions for enhanced security,
+    convenience, and desktop integration
+  * Power management suspension during package downloads, installations and
+    removals
+  * Support for download the latest changelog of a package
+  * Package screenshots
+
+Package: muon-dbg
+Description-md5: 83ab654a809e56129d4ea5474bb3ed33
+Description-en: Muon debugging symbols
+ This package contains debugging symbols for Muon.
+ When Muon crashes, in most cases this package is
+ needed to get a backtrace that is useful for developers. If you have
+ experienced a Muon crash without this package
+ installed, please install it, try to reproduce the problem and fill a bug
+ report with a new backtrace attached.
+
+Package: muon-discover
+Description-md5: 3f2baea144676a2404459b5d3dac09ea
+Description-en: Utility for browsing, installing, and removing applications
+ Muon Discover will help you browse through the huge applications library you
+ have available and help you find the applications you're looking for.
+ .
+ To install or remove software using the Center, you need administrator
+ access on the computer.
+
+Package: muon-installer
+Description-md5: 492a6b75e21703ec48e232f0d1648d44
+Description-en: Utility for browsing, installing, and removing applications
+ The Muon Software Center lets you browse and install thousands of
+ applications available for Ubuntu. You can view available
+ applications by category, or search quickly by name or description.
+ You can also examine the applications already installed, and remove
+ those you no longer need.
+ .
+ To install or remove software using the Center, you need administrator
+ access on the computer.
+
+Package: muon-notifier
+Description-md5: 8908b0c80c694fd60989543a956db1ed
+Description-en: update notifier for KDE
+ The Muon Notifier is an update notification daemon for KDE. It uses the KDE
+ Daemon frame (KDED) framework to present the user with update notifications,
+ providing an opportunity to launch the Muon Updater to deal with these
+ updates.
+
+Package: muon-updater
+Description-md5: 9d647e68762ae25944f45e89608f823a
+Description-en: update manager for KDE
+ Muon Updater is a graphical update manager for KDE. It is part of the Muon
+ family of software and provides an interface similar to that of Muon.
+
+Package: mysql-source-5.5
+Description-md5: 9bacc0267862ea6c169da6cfe76d3aef
+Description-en: MySQL source
+ MySQL is a fast, stable, and true multi-user, multi-threaded SQL database
+ server.  SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the MySQL source code as configured before building.
+
+Package: mysql-testsuite
+Description-md5: a3c0fd28b808fa1a0d62a5bfb5ba8923
+Description-en: MySQL testsuite
+ This is an empty package that depends on the current "best" version of
+ mysql-testsuite (currently mysql-testsuite-5.5), as determined by the
+ MySQL maintainers.  Install this package if in doubt about which MySQL
+ version you want, as this is the one we consider to be in the best shape.
+
+Package: mysql-testsuite-5.5
+Description-md5: 3e88fc28903eb44dd0b2a0eb9f813181
+Description-en: MySQL testsuite
+ MySQL is a fast, stable, and true multi-user, multi-threaded SQL database
+ server.  SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the MySQL testsuite.
+
+Package: oem-config-kde
+Description-md5: 97a76af3c01b8626949160b1d8f526ba
+Description-en: KDE frontend for end-user post-OEM-install configuration
+ The oem-config script re-asks a number of questions that are normally asked
+ during installation, and reconfigures the system accordingly. This allows a
+ vendor to install a skeleton system, clone it onto a large number of
+ machines, and ship it to end users, while still allowing end users to set
+ up their own username and password, language, timezone, and so on.
+ .
+ This is a KDE frontend to oem-config.
+
+Package: oem-config-remaster
+Description-md5: b888546fc6f218e1af4c6b8e46901fd5
+Description-en: Remaster a CD with additional oem-config functionality
+ This script remasters a CD with additional packages and optional oem-config
+ preseed data.
+
+Package: plymouth-theme-fade-in
+Description-md5: efc0a4e57cc60e6f31a0cfc518d0b355
+Description-en: graphical boot animation and logger - fade-in theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the fade-in theme that features a centred logo
+ which fades in and out while stars twinkle around it.
+ .
+ These theme may not correctly display messages from filesystem
+ decryption, checking or error handling.
+
+Package: plymouth-theme-glow
+Description-md5: fd83f5b3b39eb37bdb9b263ddd537b92
+Description-en: graphical boot animation and logger - glow theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the glow theme that features a corporate-looking
+ pie chart for boot progress followed by a glowing logo once boot finishes.
+ .
+ These theme may not correctly display messages from filesystem
+ decryption, checking or error handling.
+
+Package: plymouth-theme-script
+Description-md5: 6ab1e0acb8bfbad08f93b9ef475dfc32
+Description-en: graphical boot animation and logger - script theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the example script theme, useful for theme developers.
+ .
+ These theme may not correctly display messages from filesystem
+ decryption, checking or error handling.
+
+Package: plymouth-theme-solar
+Description-md5: a05050529bca7085989e0f452ac47223
+Description-en: graphical boot animation and logger - solar theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the solar theme that features a violent blue
+ flaring star, and other space-like animations.
+ .
+ These theme may not correctly display messages from filesystem
+ decryption, checking or error handling.
+
+Package: plymouth-theme-spinfinity
+Description-md5: d22e6ece21f0eea458ae7c05edd0a2b2
+Description-en: graphical boot animation and logger - spinfinity theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the spinfinity theme that features a rotating
+ infinity sign beneath the logo.
+ .
+ These theme may not correctly display messages from filesystem
+ decryption, checking or error handling.
+
+Package: plymouth-theme-text
+Description-md5: 70944c5b54f1648dabab835c78a4bf4c
+Description-en: graphical boot animation and logger - text theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the text theme used when no support for a
+ graphical theme is found on your system.
+ .
+ These theme may not correctly display messages from filesystem
+ decryption, checking or error handling.
+
+Package: plymouth-x11
+Description-md5: 9f1a92f7b5eccaeda62ed2595a6135c0
+Description-en: graphical boot animation and logger - X11 interface
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the X11 renderer, which allows plymouth to interact
+ with running X sessions.
+
+Package: ubiquity-frontend-kde
+Description-md5: 18525a27bf09029b1b67c008f57f3d0b
+Description-en: KDE frontend for Ubiquity live installer
+ This package provides a KDE-based user interface frontend for the Ubiquity
+ live CD installer.
+
+Package: xen-docs-4.2
+Description-md5: 6cae9b51dadf4d0824b74e2b7ff1077f
+Description-en: Documentation for Xen
+ This package contains all the large documentation files for Xen.  This
+ includes a description interface (both the API, and a nice explanation of
+ how XEN works).
+
+Package: xen-hypervisor-4.2-amd64
+Description-md5: 30d22c56057f827a5cc3329925199782
+Description-en: Xen Hypervisor on AMD64
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-system-amd64
+Description-md5: f9a399da9b1f85d66b7c24b24d068efc
+Description-en: Xen System on AMD64 (meta-package)
+ This package depends on the latest Xen hypervisor for use on AMD64 and the
+ Xen utils.
+
+Package: xen-utils-4.2
+Description-md5: bd953dd4214727fe5759b05287bffcbe
+Description-en: XEN administrative tools
+ The userspace tools to manage a system virtualized through the XEN virtual
+ machine monitor.
+
+Package: xen-utils-common
+Description-md5: 8af52ba7dfa8ab5d2f2013a4e86ceb1e
+Description-en: Xen administrative tools - common files
+ The userspace tools to manage a system virtualized through the Xen virtual
+ machine monitor.
+
+Package: xenstore-utils
+Description-md5: cfed1da00b837e11d5cbc87fffd781d4
+Description-en: Xenstore utilities for Xen
+ This package contains the Xenstore utilities.
+
+Package: xen-hypervisor-4.2-i386
+Description-md5: 829bcfa57e4b5d520b5b4e141e3e6476
+Description-en: Xen Hypervisor on i386
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-system-i386
+Description-md5: 299e8fd765fcedc2114cbce4ebd59691
+Description-en: Xen System on i386 (meta-package)
+ This package depends on the latest Xen hypervisor for use on i386 and the
+ Xen utils.
+
